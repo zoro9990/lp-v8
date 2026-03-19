@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTQY449DYG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JTQY449DYG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Once Human - A post-apocalyptic survival game where you absorb enemy powers. Fight cosmic horrors, build your sanctuary, and survive together. Free to play on PC.">
+    <meta name="keywords" content="Once Human, survival game, post-apocalyptic, PC game, free to play, multiplayer, cosmic horror, co-op survival, open world">
+    <meta name="author" content="Starry Studio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oncehuman.com/">
+    <meta property="og:title" content="Once Human - Post-Apocalyptic Survival | Play Free">
+    <meta property="og:description" content="We were once human. Absorb enemy powers, fight cosmic horrors, build your sanctuary. Join 10M+ survivors.">
+    <meta property="og:image" content="https://oncehuman.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://oncehuman.com/">
+    <meta property="twitter:title" content="Once Human - Post-Apocalyptic Survival">
+    <meta property="twitter:description" content="We were once human. Absorb enemy powers, fight cosmic horrors. Play free on PC.">
+    
+    <title>Once Human - Post-Apocalyptic Survival Game | Play Free on PC</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/wordpress-logo-svgrepo-com.svg">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="image" href="assets/img-1_759a48d4.png" fetchpriority="high">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Non-critical origins use dns-prefetch to reduce early connection overhead -->
+    <link rel="dns-prefetch" href="https://oncehuman.v.easebar.com">
+    <link rel="dns-prefetch" href="https://adsy.click">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://i.ytimg.com">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blood: '#E60000',
+                        bloodDark: '#B30000',
+                        bloodLight: '#ff3333',
+                        cosmic: '#050508',
+                        horror: '#0d0a0a',
+                        void: '#0a0a12'
+                    },
+                    fontFamily: {
+                        display: ['Orbitron', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 1. Preconnect to crucial origins to save DNS lookup time -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- 2. Google Fonts with display=swap (Prevents invisible text while loading) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- 3. FontAwesome Non-Blocking Strategy -->
+    <!-- Browser thinks it's for print, doesn't block render, then switches to 'all' once loaded -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Absolute safety fallback for users with disabled JavaScript -->
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Inlined Custom CSS for Performance -->
+    <style>
+:root{--blood:#e60000;--blood-dark:#b30000;--blood-glow:rgba(230,0,0,0.6);--cosmic:#050508;--horror:#0d0a0a;--void:#0a0a12;--text-primary:#fff;--text-secondary:#9ca3af}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{background-color:var(--cosmic);color:var(--text-primary);overflow-x:hidden;-webkit-font-smoothing:antialiased;cursor:url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6m0 8v6M2 12h6m8 0h6m-10-2a2 2 0 100 4 2 2 0 000-4z" stroke="%23ff3333" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>') 12 12,auto;-moz-osx-font-smoothing:grayscale}a,button,.cursor-pointer{cursor:url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6m0 8v6M2 12h6m8 0h6M12 10a2 2 0 100 4 2 2 0 000-4z" stroke="%23ffffff" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="1.5" fill="%23ff3333"/></svg>') 12 12,pointer!important}::selection{background:var(--blood);color:#fff}.noise-overlay{opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}.vignette{background:radial-gradient(ellipse at center,transparent 60%,rgba(0,0,0,0.4) 100%)}@keyframes glitch{0%,100%{text-shadow:2px 2px 0 var(--blood),-2px -2px 0 #00ffff;transform:translate(0)}25%{text-shadow:-2px 2px 0 var(--blood),2px -2px 0 #00ffff;transform:translate(-1px,1px)}50%{text-shadow:2px -2px 0 var(--blood),-2px 2px 0 #00ffff;transform:translate(1px,-1px)}75%{text-shadow:-2px -2px 0 var(--blood),2px 2px 0 #00ffff;transform:translate(-1px,-1px)}}@keyframes pulse-red{0%{transform:scale(1);box-shadow:0 0 0 0 var(--blood-glow),0 0 30px rgba(230,0,0,0.3)}50%{transform:scale(1.02);box-shadow:0 0 0 12px rgba(230,0,0,0),0 0 50px rgba(230,0,0,0.4)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(230,0,0,0),0 0 30px rgba(230,0,0,0.3)}}@keyframes pulseGlow{0%,100%{text-shadow:0 0 20px var(--blood-glow),0 0 40px rgba(230,0,0,0.3)}50%{text-shadow:0 0 40px var(--blood-glow),0 0 80px rgba(230,0,0,0.5)}}@keyframes fade-in-up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}@keyframes scroll{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(6px)}}@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(2deg)}}@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}@keyframes void-pulse{0%,100%{filter:blur(20px) opacity(.5) scale(1)}50%{filter:blur(40px) opacity(.8) scale(1.1)}}@keyframes scanner{0%{transform:translateY(-100%);opacity:0}50%{opacity:.5}100%{transform:translateY(100%);opacity:0}}.text-glow-red{animation:pulseGlow 3s ease-in-out infinite}.pulse-red{animation:pulse-red 3s infinite}.btn-primary{position:relative;overflow:hidden;transition:all .4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 30px rgba(230,0,0,0.3)}.btn-primary::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);transition:.5s;pointer-events:none}.btn-primary:hover::before{left:100%}.btn-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 50px rgba(230,0,0,0.5)}.btn-glow{position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);transform:skewX(-25deg) translateX(-200%);transition:transform .8s ease}.btn-primary:hover .btn-glow{transform:skewX(-25deg) translateX(200%)}.hero-section{min-height:100vh}.hero-video-container{filter:brightness(1) contrast(1.05) saturate(1.1)}.glass-panel{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid rgba(255,255,255,0.1);position:relative;overflow:hidden}.glass-panel::before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,transparent,rgba(255,255,255,0.05),transparent);animation:shimmer 10s linear infinite}.promo-card{transition:transform .6s cubic-bezier(0.4,0,0.2,1);animation:promo-float 4s ease-in-out infinite;position:relative;box-shadow:0 40px 100px rgba(0,0,0,0.8)}.promo-card::after{content:'';position:absolute;inset:-1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);z-index:-1;filter:blur(2px);opacity:.5}.promo-card:hover{transform:rotateX(0deg) scale(1.02)!important}.scanline{position:absolute;inset:0;background:linear-gradient(to bottom,transparent,rgba(230,0,0,0.05),transparent);height:10%;width:100%;z-index:5;pointer-events:none;animation:scanner 4s linear infinite}.countdown-digit{transition:transform .3s ease}.countdown-digit:hover{transform:translateZ(40px) scale(1.05)!important}#countdown-seconds{transition:transform .15s ease,color .3s ease}@keyframes promo-float{0%,100%{transform:rotateX(2deg) translateY(0)}50%{transform:rotateX(2deg) translateY(-8px)}}.hero-content{animation:fade-in-up 1s ease-out}.fomo-bar{background:linear-gradient(90deg,rgba(230,0,0,0.15) 0%,rgba(230,0,0,0.25) 25%,rgba(180,0,0,0.25) 50%,rgba(230,0,0,0.25) 75%,rgba(230,0,0,0.15) 100%);backdrop-filter:blur(10px);border-bottom:1px solid rgba(230,0,0,0.2);transition:transform .3s ease}.fomo-bar.hidden{transform:translateY(-100%)}.marquee{display:flex;animation:marquee 25s linear infinite}.server-ticker{display:inline-flex;align-items:center;white-space:nowrap}#main-nav{transition:all .8s cubic-bezier(0.16,1,0.3,1);will-change:transform,top,max-width}#main-nav.nav-scrolled{top:15px!important;max-width:1000px!important}.nav-console-wrapper{transition:all .8s cubic-bezier(0.16,1,0.3,1);will-change:padding,background-color,border-color,box-shadow;position:relative;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.5),inset 0 0 20px rgba(255,255,255,0.05)}@keyframes active-signal-pulse{0%,100%{opacity:1;transform:scale(1);filter:brightness(1)}50%{opacity:.6;transform:scale(1.1);filter:brightness(1.5)}}.animate-pulse{animation:active-signal-pulse 1.5s ease-in-out infinite}.nav-console-wrapper::after{content:'';position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(230,0,0,0.1),transparent);animation:scanner-sweep 4s linear infinite;pointer-events:none}@keyframes scanner-sweep{0%{left:-100%}40%{left:200%}100%{left:200%}}.nav-link-gamer{transition:all .3s cubic-bezier(0.4,0,0.2,1)}.nav-link-gamer:hover{letter-spacing:.25em;background:rgba(230,0,0,0.05);text-shadow:1px 0 rgba(230,0,0,0.7),-1px 0 rgba(0,255,255,0.3);animation:nav-glitch-clip .3s steps(2) infinite}@keyframes nav-glitch-clip{0%{transform:translate(0)}50%{transform:translate(-1px,1px)}100%{transform:translate(1px,-1px)}}.nav-cta-gamer{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.1)}.nav-cta-gamer::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.3) 0%,transparent 70%);opacity:0;transition:opacity .3s ease}.nav-cta-gamer:hover{box-shadow:0 0 25px rgba(230,0,0,0.6);border-color:rgba(255,255,255,0.3)}.nav-cta-gamer:hover::before{opacity:1}.bg-glass{background:rgba(10,10,18,0.6);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.text-gradient{background:linear-gradient(135deg,#fff 0%,#999 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}.title-cosmic-streak{position:relative;display:inline-block}.title-cosmic-streak::before{content:'';position:absolute;top:50%;left:-10%;right:-10%;height:70px;background:radial-gradient(ellipse at center,rgba(160,32,255,0.6) 0%,rgba(130,0,255,0.2) 60%,transparent 100%);transform:translateY(-50%) skew(-15deg);filter:blur(10px);z-index:-1;pointer-events:none;animation:pulse-cosmic 3s ease-in-out infinite alternate}@keyframes pulse-cosmic{0%{opacity:.6;transform:translateY(-50%) skew(-15deg) scaleX(0.95)}100%{opacity:1;transform:translateY(-50%) skew(-15deg) scaleX(1.1)}}.aberrant-title{font-family:'Orbitron',sans-serif;font-weight:900;letter-spacing:-1px;color:#fff;text-transform:uppercase;text-shadow:0 2px 0 rgba(255,255,255,0.5),0 -1px 0 rgba(0,0,0,0.8),-1px 0 4px rgba(255,255,255,0.3),2px 2px 20px rgba(180,0,255,0.8)}.subtitle-badge{position:relative;display:inline-block;background:linear-gradient(to bottom,rgba(15,10,20,0.9),rgba(5,0,10,0.95));border:1px solid transparent;border-image:linear-gradient(to right,transparent 5%,rgba(160,32,255,0.6) 20%,rgba(200,50,255,0.9) 50%,rgba(160,32,255,0.6) 80%,transparent 95%);border-image-slice:1;padding:8px 40px;letter-spacing:2px}.subtitle-badge::after{content:'';position:absolute;bottom:-1px;left:45%;right:45%;height:2px;background:#d466ff;box-shadow:0 0 12px 3px rgba(200,50,255,0.9);border-radius:50%}.nav-link{position:relative;padding-bottom:4px}.nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:linear-gradient(90deg,var(--blood),transparent);transition:width .3s ease}.nav-link:hover::after{width:100%}.gameplay-card{transition:all .5s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 0 1px rgba(255,255,255,0.05)}.gameplay-card:hover{box-shadow:0 20px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(230,0,0,0.3)}.gameplay-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 0%,rgba(230,0,0,0.08) 100%);opacity:0;transition:opacity .4s ease;z-index:1;border-radius:inherit}.gameplay-card:hover::before{opacity:1}.feature-card{transition:all .4s cubic-bezier(0.4,0,0.2,1)}.feature-card:hover{transform:translateY(-8px)}.stream-card{transition:all .4s cubic-bezier(0.4,0,0.2,1)}.stream-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 20px 50px rgba(230,0,0,0.15)}.stat-item{animation:fade-in-up .6s ease-out;opacity:0;animation-fill-mode:forwards}.stat-item:nth-child(1){animation-delay:.1s}.stat-item:nth-child(2){animation-delay:.2s}.stat-item:nth-child(3){animation-delay:.3s}.stat-item:nth-child(4){animation-delay:.4s}.scroll-indicator{opacity:1;transition:opacity .5s ease}.scroll-indicator.hidden{opacity:0;pointer-events:none}.animate-scroll{animation:scroll 1.5s infinite}.sticky-bottom{transform:translateY(150px);opacity:0;pointer-events:none;transition:transform .6s cubic-bezier(0.4,0,0.2,1),opacity .6s cubic-bezier(0.4,0,0.2,1)}.sticky-bottom.show{transform:translateY(0);opacity:1;pointer-events:auto}#lootModal{display:none;opacity:0;transition:opacity .4s ease}#lootModal.show{display:flex;opacity:1}#lootModal.show .loot-modal-content{transform:scale(1);opacity:1}.loot-modal-content{transform:scale(0.95);opacity:0;transition:all .4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 100px rgba(230,0,0,0.3)}.showcase-hero{box-shadow:0 0 0 1px rgba(255,255,255,0.05);transition:all .5s cubic-bezier(0.4,0,0.2,1)}.showcase-hero:hover{box-shadow:0 20px 80px rgba(230,0,0,0.2),0 0 0 1px rgba(230,0,0,0.3)}.showcase-card{box-shadow:0 0 0 1px rgba(255,255,255,0.05);transition:all .5s cubic-bezier(0.4,0,0.2,1)}.showcase-card:hover{box-shadow:0 15px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(230,0,0,0.3);transform:translateY(-4px)}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:1rem}.gallery-item{min-height:220px;box-shadow:0 0 0 1px rgba(255,255,255,0.05);transition:all .5s cubic-bezier(0.4,0,0.2,1)}.gallery-item:hover{box-shadow:0 15px 60px rgba(230,0,0,0.2),0 0 0 1px rgba(230,0,0,0.3);transform:translateY(-4px)}.gallery-item-featured{grid-column:1 / 3;grid-row:1 / 3;min-height:450px}@media(max-width:768px){.gallery-grid{grid-template-columns:1fr 1fr;gap:.75rem}.gallery-item-featured{grid-column:1 / -1;grid-row:auto;min-height:250px}.gallery-item{min-height:160px}}@media(max-width:480px){.gallery-grid{grid-template-columns:1fr}.gallery-item{min-height:200px}.gallery-item-featured{min-height:220px}}.scenario-tab,.class-tab,.media-tab{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer}.scenario-tab:hover,.class-tab:hover,.media-tab:hover{background:rgba(230,0,0,0.1);border-color:rgba(230,0,0,0.3);color:#fff}.scenario-tab.active,.class-tab.active,.media-tab.active{background:rgba(230,0,0,0.15);border-color:var(--blood);color:#fff;box-shadow:0 0 15px rgba(230,0,0,0.3)}.season-tab>div{border-color:rgba(255,255,255,0.15);opacity:.7}.season-tab:hover>div,.season-tab.active>div{border-color:var(--blood);opacity:1;box-shadow:0 0 20px rgba(230,0,0,0.4)}.scenario-panel,.season-panel,.class-panel,.media-panel{display:none;opacity:0;transition:opacity .5s ease}.scenario-panel.active,.season-panel.active,.class-panel.active,.media-panel.active{display:block;opacity:1}.scenario-tab.active,.class-tab.active,.media-tab.active{background:rgba(230,0,0,0.1)!important;border-color:var(--blood)!important;box-shadow:0 0 15px rgba(230,0,0,0.3);color:#fff}.scenario-tab.active i,.class-tab.active i,.media-tab.active i{color:var(--blood)}.media-navs a.on{color:#fff;font-weight:700;position:relative}.media-navs a.on::after{content:'';position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);width:20px;height:2px;background-color:var(--blood);box-shadow:0 0 8px var(--blood)}.scenario-panels,.season-panels{position:relative;border-radius:1rem;overflow:hidden}.codex-card{transition:all .4s cubic-bezier(0.4,0,0.2,1)}.codex-card:hover{transform:translateX(6px);background:rgba(255,255,255,0.05)}.feature-slide{opacity:0;visibility:hidden;transition:opacity .8s ease,visibility 0.8s ease}.feature-slide.active{opacity:1;visibility:visible}.feature-dot{background:rgba(255,255,255,0.3);border:1px solid rgba(255,255,255,0.2);cursor:pointer;transform:rotate(45deg)}.feature-dot:hover{background:rgba(230,0,0,0.5);border-color:var(--blood)}.feature-dot.active{background:var(--blood);border-color:var(--blood);box-shadow:0 0 10px rgba(230,0,0,0.6);transform:rotate(45deg) scale(1.3)}.feature-char{width:40%;max-width:500px;left:5%;bottom:0}.feature-tit{width:45%;max-width:600px;left:6%;bottom:15%}.particle{position:absolute;border-radius:50%;pointer-events:none;background:var(--blood)}[data-aos="fade-up"]{opacity:0;transform:translateY(30px);transition:all .6s ease}[data-aos="fade-up"].aos-animate{opacity:1;transform:translateY(0)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--cosmic)}::-webkit-scrollbar-thumb{background:var(--blood);border-radius:3px}::-webkit-scrollbar-thumb:hover{background:var(--blood-dark)}*:focus{outline:2px solid var(--blood);outline-offset:3px}@keyframes marquee-horizontal{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.animate-marquee-horizontal{animation:marquee-horizontal 40s linear infinite;will-change:transform}.marquee-row-hover:hover .animate-marquee-horizontal{animation-play-state:paused}.marquee-item{transition:all .5s ease;border:1px solid rgba(255,255,255,0.05);opacity:.7;filter:grayscale(30%)}.marquee-item:hover{transform:scale(1.08) translateZ(0);box-shadow:0 0 40px rgba(230,0,0,0.5);border-color:rgba(230,0,0,0.8);opacity:1;filter:grayscale(0%);z-index:20;position:relative;border-radius:12px}@media(max-width:768px){.hero-headline{font-size:2.5rem;line-height:1.1}.hero-subtitle{font-size:1rem}.gameplay-card{aspect-ratio:16/11}.fomo-bar{font-size:.65rem;padding:8px 0}.feature-card{padding:1.5rem}.text-glow-red{animation:none}}@media(max-width:640px){.sticky-bottom .container{justify-content:center}.hero-cta,.hero-secondary{width:100%}}@keyframes scan-slow{0%{transform:translateY(-100%);opacity:0}50%{opacity:.5}100%{transform:translateY(100vh);opacity:0}}.animate-scan-slow{animation:scan-slow 8s linear infinite}@keyframes tactical-flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}96%{opacity:.8}97%{opacity:1}}.animate-flicker{animation:tactical-flicker 4s infinite}@keyframes data-load{0%{width:0%;box-shadow:0 0 0 var(--blood)}50%{width:70%;box-shadow:0 0 10px var(--blood)}100%{width:100%;box-shadow:0 0 20px var(--blood)}}.stat-progress-bar{height:2px;background:var(--blood);position:relative;overflow:hidden}.stat-progress-fill{height:100%;background:#fff;width:0;animation:data-load 2s cubic-bezier(0.4,0,0.2,1) forwards;box-shadow:0 0 10px #fff}.tactical-corner{position:absolute;width:6px;height:6px;border-color:var(--blood);opacity:.5;transition:all .3s ease}.stat-item:hover .tactical-corner{opacity:1;width:10px;height:10px}.footer-terminal{background:linear-gradient(to bottom,transparent,rgba(13,10,10,0.95));border-top:1px solid rgba(230,0,0,0.2)}.crt-flicker{position:relative}.crt-flicker::after{content:" ";display:block;position:absolute;top:0;left:0;bottom:0;right:0;background:rgba(18,16,16,0.1);opacity:0;z-index:2;pointer-events:none;animation:flicker 4s infinite}@keyframes flicker{0%{opacity:.27861}5%{opacity:.34769}10%{opacity:.23604}15%{opacity:.90626}20%{opacity:.18128}25%{opacity:.83891}30%{opacity:.65583}35%{opacity:.57807}40%{opacity:.26593}45%{opacity:.84693}50%{opacity:.96019}55%{opacity:0.08523}60%{opacity:.71056}65%{opacity:.73437}70%{opacity:.85213}75%{opacity:.26477}80%{opacity:.24351}85%{opacity:.27357}90%{opacity:.80303}95%{opacity:.13444}100%{opacity:.8035}}.back-to-top{position:fixed;bottom:30px;right:30px;width:40px;height:40px;background:rgba(230,0,0,0.2);border:1px solid rgba(230,0,0,0.4);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:100;transition:all .4s cubic-bezier(0.175,0.885,0.32,1.275);opacity:0;visibility:hidden;transform:translateY(20px) scale(0.8);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}.back-to-top.show{opacity:1;visibility:visible;transform:translateY(0) scale(1)}.back-to-top:hover{background:rgba(230,0,0,0.6);border-color:rgba(230,0,0,0.8);box-shadow:0 0 20px rgba(230,0,0,0.4);transform:translateY(-5px) scale(1.1)}.back-to-top i{font-size:1.2rem;transition:transform .3s ease}.back-to-top:hover i{transform:translateY(-2px)}@media print{.fomo-bar,#main-nav,.sticky-bottom,#lootModal,.noise-overlay,#particles-container{display:none!important}}#videoModal{opacity:0;transition:opacity .4s ease;pointer-events:none}#videoModal.flex{display:flex!important}#videoModal.show{opacity:1;pointer-events:auto}#videoModal.show #videoModalContent{transform:scale(1);opacity:1}#videoModalContent{transform:scale(0.95);opacity:0;transition:transform .5s cubic-bezier(0.4,0,0.2,1),opacity 0.5s ease}.modal-overlay{transition:opacity .5s ease}#videoModal:not(.show) .modal-overlay{opacity:0}#videoPlayerContainer iframe,#videoPlayerContainer video{border:none;outline:none}#imageModal.flex{display:flex!important}#imageModal.show{opacity:1}#imageModal.show #imageModalContent{transform:scale(1);opacity:1}#imageModal #imageModalContent{box-shadow:0 0 120px rgba(0,0,0,0.9),0 0 30px rgba(230,0,0,0.1)}#closeImageModal:hover i{color:var(--blood)}#modalImage.loaded{opacity:1;transform:scale(1)}#modalImage{transform:scale(0.95);transition:opacity .4s ease,transform 0.4s cubic-bezier(0.165,0.84,0.44,1)}#imageLoading.hidden{display:none}#langDropdown .scrollbar-thin::-webkit-scrollbar{width:4px}#langDropdown .scrollbar-thin::-webkit-scrollbar-track{background:0 0}#langDropdown .scrollbar-thin::-webkit-scrollbar-thumb{background:rgba(230,0,0,0.3);border-radius:4px}html.rtl .font-display{letter-spacing:.05em}html.rtl .tracking-widest,html.rtl .tracking-wider,html.rtl [class*="tracking-"]{letter-spacing:.05em!important}html.rtl .text-left{text-align:right}html.rtl .text-right{text-align:left}html.rtl .ml-2{margin-left:0;margin-right:.5rem}html.rtl .mr-2{margin-right:0;margin-left:.5rem}html.rtl .pl-4{padding-left:0;padding-right:1rem}html.rtl .border-l{border-left:0;border-right:1px solid}
+    </style>
+</head>
+<body class="bg-cosmic text-white overflow-x-hidden font-body antialiased">
+    
+    <!-- Noise Overlay -->
+    <div class="noise-overlay fixed inset-0 pointer-events-none z-[9998]"></div>
+    
+    <!-- Floating Particles Container -->
+    <div id="particles-container" class="fixed inset-0 pointer-events-none z-[1]"></div>
+    
+
+    
+    <!-- Navigation -->
+    <nav class="fixed top-[40px] left-1/2 -translate-x-1/2 z-[55] w-[95%] max-w-[1200px] transition-all duration-500" id="main-nav">
+        <div class="nav-console-wrapper relative bg-cosmic/80 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-full px-4 md:px-8 py-2 md:py-3 flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            <!-- Tactical Corner Accents -->
+            <div class="absolute top-0 left-10 w-4 h-px bg-blood/50 shadow-[0_0_5px_rgba(230,0,0,0.8)]"></div>
+            <div class="absolute bottom-0 right-10 w-4 h-px bg-blood/50 shadow-[0_0_5px_rgba(230,0,0,0.8)]"></div>
+            <div class="absolute -left-1 top-1/2 -translate-y-1/2 w-1 h-4 bg-blood/30 rounded-full"></div>
+            <div class="absolute -right-1 top-1/2 -translate-y-1/2 w-1 h-4 bg-blood/30 rounded-full"></div>
+            
+            <div class="flex items-center gap-4 relative z-10 flex-shrink-0">
+                <a href="#" class="logo group flex items-center">
+                    <div class="logo-wrapper w-20 md:w-28 hover:scale-105 transition-transform duration-300">
+                        <img src="assets/GAME 1.webp" alt="Once Human" class="w-full h-auto object-contain" fetchpriority="high" width="112" height="40">
+                    </div>
+                </a>
+                <!-- Status Indicator -->
+                <div class="hidden lg:flex flex-col items-start gap-0.5 opacity-50 border-l border-white/10 pl-4">
+                    <div class="flex items-center gap-1.5 whitespace-nowrap">
+                        <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_5px_rgba(34,197,94,0.8)]"></span>
+                        <span class="text-[8px] font-display tracking-widest text-white uppercase" data-i18n="nav-status">Active Signal</span>
+                    </div>
+                    <span class="text-[7px] font-display tracking-[0.2em] text-gray-400 whitespace-nowrap">SYS-ID: 2026-ABRRNT</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-0.5 xl:gap-2 bg-white/5 rounded-full px-1.5 py-1 border border-white/5 flex-shrink-0">
+                <a href="#features" class="nav-link-gamer whitespace-nowrap group px-3 xl:px-5 py-1.5 rounded-full text-[10px] xl:text-[11px] font-display tracking-[0.2em] text-gray-400 hover:text-white transition-all relative overflow-hidden">
+                    <span class="relative z-10" data-i18n="nav-features">FEATURES</span>
+                    <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blood scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></div>
+                </a>
+                <a href="#gameplay" class="nav-link-gamer whitespace-nowrap group px-3 xl:px-5 py-1.5 rounded-full text-[10px] xl:text-[11px] font-display tracking-[0.2em] text-gray-400 hover:text-white transition-all relative overflow-hidden">
+                    <span class="relative z-10" data-i18n="nav-gameplay">GAMEPLAY</span>
+                    <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blood scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></div>
+                </a>
+                <a href="#gallery" class="nav-link-gamer whitespace-nowrap group px-3 xl:px-5 py-1.5 rounded-full text-[10px] xl:text-[11px] font-display tracking-[0.2em] text-gray-400 hover:text-white transition-all relative overflow-hidden">
+                    <span class="relative z-10" data-i18n="nav-gallery">GALLERY</span>
+                    <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blood scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></div>
+                </a>
+                <a href="#community" class="nav-link-gamer whitespace-nowrap group px-3 xl:px-5 py-1.5 rounded-full text-[10px] xl:text-[11px] font-display tracking-[0.2em] text-gray-400 hover:text-white transition-all relative overflow-hidden">
+                    <span class="relative z-10" data-i18n="nav-community">COMMUNITY</span>
+                    <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blood scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></div>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3 xl:gap-4 relative z-10 flex-shrink-0">
+                <a href="https://to.dordir.com/u?k=24c3cf9a5dde4dd896352d1314e9aacd&via=19905" target="_blank" class="nav-cta-gamer whitespace-nowrap block bg-blood hover:bg-bloodDark hover:scale-105 text-white font-black py-2 px-5 rounded-full transition-all btn-sound text-[9px] xl:text-[10px] tracking-[0.15em] shadow-[0_5px_15px_rgba(230,0,0,0.4)]">
+                    <span data-i18n="nav-play">PLAY FREE</span>
+                </a>
+                <button class="md:hidden text-gray-400 hover:text-white p-1.5 transition-colors" id="mobile-menu-btn" aria-label="Open navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-cosmic/98 backdrop-blur-2xl z-[70] hidden flex-col items-center justify-center p-6 transition-all duration-300">
+        <div class="absolute inset-0 bg-void/50 pointer-events-none opacity-20" style="background-image: radial-gradient(circle at 50% 50%, rgba(230,0,0,0.2) 0%, transparent 70%);"></div>
+        
+        <button id="close-mobile-menu" class="absolute top-10 right-10 text-gray-400 hover:text-white transition-all text-4xl p-2" aria-label="Close navigation menu">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="flex flex-col items-center gap-10 relative z-10 w-full">
+            <div class="text-[10px] font-display tracking-[0.5em] text-blood/50 mb-4 animate-pulse" data-i18n="mobile-entry">SYSTEM ENTRY</div>
+            <a href="#features" class="text-3xl font-display tracking-widest hover:text-white text-gray-500 transition-all mobile-nav-link group flex items-center gap-4">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity text-blood text-sm font-mono">[SCAN]</span>
+                FEATURES
+            </a>
+            <a href="#gameplay" class="text-3xl font-display tracking-widest hover:text-white text-gray-400 transition-all mobile-nav-link group flex items-center gap-4">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity text-blood text-sm font-mono">[SCAN]</span>
+                GAMEPLAY
+            </a>
+            <a href="#gallery" class="text-3xl font-display tracking-widest hover:text-white text-gray-400 transition-all mobile-nav-link group flex items-center gap-4">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity text-blood text-sm font-mono">[SCAN]</span>
+                GALLERY
+            </a>
+            <a href="#community" class="text-3xl font-display tracking-widest hover:text-white text-gray-400 transition-all mobile-nav-link group flex items-center gap-4">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity text-blood text-sm font-mono">[SCAN]</span>
+                COMMUNITY
+            </a>
+            <div class="w-16 h-[2px] bg-blood/30 my-4 shadow-[0_0_10px_rgba(230,0,0,0.5)]"></div>
+            <a href="#download" class="mobile-nav-link bg-blood text-white font-black py-4 px-12 rounded-full tracking-widest text-sm shadow-[0_0_30px_rgba(230,0,0,0.4)]" aria-label="Go to download section">
+                PLAY FREE
+            </a>
+        </div>
+    </div>
+    
+    <!-- FOMO Bar -->
+    <div class="fomo-bar fixed top-0 left-0 right-0 z-[60] py-2 overflow-hidden">
+        <div class="marquee whitespace-nowrap" dir="ltr">
+            <span class="server-ticker font-display tracking-wider text-xs">
+                <span class="inline-block mx-6 text-red-400"><i class="fas fa-circle text-[6px] animate-pulse mr-2"></i><span data-i18n="fomo-1">LIVE: US-EAST (98% CAPACITY)</span></span>
+                <span class="inline-block mx-6 text-red-300"><i class="fas fa-circle text-[6px] animate-pulse mr-2"></i><span data-i18n="fomo-2">EU-WEST (QUEUE ACTIVE)</span></span>
+                <span class="inline-block mx-6 text-amber-400"><i class="fas fa-circle text-[6px] animate-pulse mr-2"></i><span data-i18n="fomo-3">ASIA-PACIFIC (EXPANDING)</span></span>
+                <span class="inline-block mx-6 text-green-400"><i class="fas fa-users mr-2"></i><span data-i18n="fomo-4">12,847,293 SURVIVORS ONLINE</span></span>
+                <span class="inline-block mx-6 text-blood"><i class="fas fa-bolt mr-2"></i><span data-i18n="fomo-5">NEW SEASON: ABYSSAL HORROR</span></span>
+            </span>
+            <span class="server-ticker font-display tracking-wider text-xs">
+                <span class="inline-block mx-6 text-red-400"><i class="fas fa-circle text-[6px] animate-pulse mr-2"></i><span data-i18n="fomo-1">LIVE: US-EAST (98% CAPACITY)</span></span>
+                <span class="inline-block mx-6 text-red-300"><i class="fas fa-circle text-[6px] animate-pulse mr-2"></i><span data-i18n="fomo-2">EU-WEST (QUEUE ACTIVE)</span></span>
+                <span class="inline-block mx-6 text-amber-400"><i class="fas fa-circle text-[6px] animate-pulse mr-2"></i><span data-i18n="fomo-3">ASIA-PACIFIC (EXPANDING)</span></span>
+                <span class="inline-block mx-6 text-green-400"><i class="fas fa-users mr-2"></i><span data-i18n="fomo-4">12,847,293 SURVIVORS ONLINE</span></span>
+                <span class="inline-block mx-6 text-blood"><i class="fas fa-bolt mr-2"></i><span data-i18n="fomo-5">NEW SEASON: ABYSSAL HORROR</span></span>
+            </span>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-screen flex items-center justify-center pt-32">
+        <div class="hero-video-container absolute inset-0 overflow-hidden">
+            <video class="hero-video absolute inset-0 w-full h-full object-cover scale-105" autoplay muted loop playsinline preload="auto" id="hero-video" fetchpriority="high" poster="assets/img-1_759a48d4.png" aria-label="Cinematic cinematic of Once Human post-apocalyptic world">
+                <source src="https://oncehuman.v.easebar.com/2026/0119/20260119.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <!-- Overlay Effects -->
+        <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-cosmic/60 via-cosmic/20 to-cosmic/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-cosmic/40 via-transparent to-cosmic/40"></div>
+        <div class="vignette absolute inset-0"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content relative z-10 text-center px-6 max-w-5xl mx-auto">
+            
+            <!-- 3D Promo Banner -->
+            <div class="promo-banner-3d mb-6" style="perspective: 1200px;">
+                <div class="promo-card relative mx-auto max-w-2xl" style="transform: rotateX(2deg); transform-style: preserve-3d;">
+                    <!-- Subtle border glow -->
+                    <div class="absolute -inset-px bg-gradient-to-r from-white/20 via-white/5 to-white/20 rounded-2xl"></div>
+                    
+                    <!-- Card Content -->
+                    <div class="relative glass-panel rounded-2xl pt-0 pb-2 px-6 md:pt-0 md:pb-4 md:px-8 border border-white/10 overflow-hidden">
+                        <!-- Scanline Effect -->
+                        <div class="scanline"></div>
+                        
+                        <!-- Corner Accents (Custom Aberrant Shapes) -->
+                        <div class="absolute top-0 left-0 w-8 h-8 pointer-events-none">
+                            <div class="absolute top-2 left-2 w-px h-6 bg-blood/60"></div>
+                            <div class="absolute top-2 left-2 w-6 h-px bg-blood/60"></div>
+                        </div>
+                        <div class="absolute top-0 right-0 w-8 h-8 pointer-events-none">
+                            <div class="absolute top-2 right-2 w-px h-6 bg-blood/60"></div>
+                            <div class="absolute top-2 right-2 w-6 h-px bg-blood/60"></div>
+                        </div>
+                        
+                        <!-- Headline -->
+                        <div class="relative z-10 text-center -mt-4">
+                            <div class="title-cosmic-streak relative inline-block w-full">
+                                <!-- Void Flare behind title -->
+                                <div class="absolute inset-0 bg-void-flare rounded-full blur-[70px] animate-void-pulse z-0 -translate-y-4"></div>
+                                <img src="assets/slogan20260112_c36401b9.png" alt="Once Human slogan: Aberrant Progeny" class="relative z-10 w-full max-w-[1000px] h-auto mx-auto drop-shadow-[0_0_40px_rgba(0,0,0,0.7)] scale-105" fetchpriority="high" width="1000" height="200">
+                            </div>
+                        </div>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="flex items-center justify-center gap-3 sm:gap-5 mt-2 mb-4 relative z-10" dir="ltr">
+                            <div class="countdown-digit relative group" style="transform: translateZ(30px);">
+                                <div class="relative border border-white/10 rounded-xl px-4 py-3 sm:px-5 sm:py-4 min-w-[75px] sm:min-w-[90px] transition-all group-hover:border-blood/30">
+                                    <div class="text-3xl sm:text-4xl md:text-5xl font-display font-black text-white tracking-widest" id="countdown-hours">03</div>
+                                    <div class="text-[9px] text-gray-500 uppercase tracking-[0.3em] mt-1 font-display" data-i18n="hero-hours">Hours</div>
+                                </div>
+                            </div>
+                            <span class="text-3xl sm:text-4xl font-display text-blood/50 font-bold">:</span>
+                            <div class="countdown-digit relative group" style="transform: translateZ(30px);">
+                                <div class="relative border border-white/10 rounded-xl px-4 py-3 sm:px-5 sm:py-4 min-w-[75px] sm:min-w-[90px] transition-all group-hover:border-blood/30">
+                                    <div class="text-3xl sm:text-4xl md:text-5xl font-display font-black text-white tracking-widest" id="countdown-minutes">04</div>
+                                    <div class="text-[9px] text-gray-500 uppercase tracking-[0.3em] mt-1 font-display" data-i18n="hero-minutes">Minutes</div>
+                                </div>
+                            </div>
+                            <span class="text-3xl sm:text-4xl font-display text-blood/50 font-bold">:</span>
+                            <div class="countdown-digit relative group" style="transform: translateZ(30px);">
+                                <div class="relative border border-blood/20 rounded-xl px-4 py-3 sm:px-5 sm:py-4 min-w-[75px] sm:min-w-[90px] transition-all group-hover:border-blood/50">
+                                    <div class="text-3xl sm:text-4xl md:text-5xl font-display font-black text-blood animate-pulse-glow" id="countdown-seconds">12</div>
+                                    <div class="text-[9px] text-gray-400 uppercase tracking-[0.3em] mt-1 font-display" data-i18n="hero-seconds">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA Button -->
+                        <button onclick="window.open('https://to.dordir.com/u?k=24c3cf9a5dde4dd896352d1314e9aacd&via=19905', '_blank')" class="hero-cta btn-primary bg-blood hover:bg-bloodDark text-white font-bold py-5 px-14 text-lg rounded-xl pulse-red btn-sound group relative overflow-hidden w-full sm:w-auto" style="transform: translateZ(20px);">
+                            <span class="relative z-10 flex items-center justify-center gap-3">
+                                <i class="fas fa-download text-xl"></i>
+                                <span class="tracking-widest" data-i18n="hero-cta">DOWNLOAD FREE NOW</span>
+                                <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                            </span>
+                            <div class="btn-glow absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></div>
+                        </button>
+                        
+                        <!-- Trust Badges Redesigned as Data Capsules -->
+                        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-4 relative z-10">
+                            <div class="flex items-center gap-2 px-3 py-1 rounded-full border border-white/5 text-[11px] sm:text-xs">
+                                <i class="fas fa-shield-alt text-green-500"></i>
+                                <span class="text-gray-400" data-i18n="hero-secure">Secure</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3 py-1 rounded-full border border-white/5 text-[11px] sm:text-xs">
+                                <i class="fas fa-users text-blood"></i>
+                                <span class="text-gray-400 font-medium">12M+ <span class="text-gray-500">Survivors</span></span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3 py-1 rounded-full border border-white/5 text-[11px] sm:text-xs">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <span class="text-white font-bold">4.8</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3 py-1 rounded-full border border-white/5 text-[11px] sm:text-xs">
+                                <i class="fab fa-windows text-blue-400"></i>
+                                <span class="text-gray-400" data-i18n="hero-platform">PC Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator removed -->
+    </section>
+
+    <!-- Horizontal Showcase Marquee -->
+    <section class="horizontal-marquee-section relative py-4 bg-void border-y border-white/10 overflow-hidden marquee-row-hover" dir="ltr">
+        <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-void via-transparent to-void w-full h-full"></div>
+        <div class="animate-marquee-horizontal flex gap-4 px-4 w-max pointer-events-auto transition-all duration-500" dir="ltr">
+            <a href="assets/1.webp" class="cursor-zoom-in group shrink-0"><img src="assets/1.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Survivor in a mutated forest environment" loading="lazy" width="300" height="170"></a>
+            <a href="assets/2.webp" class="cursor-zoom-in group shrink-0"><img src="assets/2.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Abandoned city ruins overgrown with Stardust vegetation" loading="lazy" width="300" height="170"></a>
+            <a href="assets/3.webp" class="cursor-zoom-in group shrink-0"><img src="assets/3.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Tactical combat against a cosmic horror entity" loading="lazy" width="300" height="170"></a>
+            <a href="assets/4.webp" class="cursor-zoom-in group shrink-0"><img src="assets/4.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Sanctuary base building in a post-apocalyptic desert" loading="lazy" width="300" height="170"></a>
+            <a href="assets/5.webp" class="cursor-zoom-in group shrink-0"><img src="assets/5.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Close-up of a Deviant creature encounter" loading="lazy" width="300" height="170"></a>
+            <a href="assets/6.webp" class="cursor-zoom-in group shrink-0"><img src="assets/6.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Cinematic view of a sunset over the wasteland" loading="lazy" width="300" height="170"></a>
+            <a href="assets/7.webp" class="cursor-zoom-in group shrink-0"><img src="assets/7.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Team of survivors during an expedition" loading="lazy" width="300" height="170"></a>
+            <a href="assets/9.webp" class="cursor-zoom-in group shrink-0"><img src="assets/9.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Absorbing cosmic power from a fallen enemy" loading="lazy" width="300" height="170"></a>
+            <a href="assets/10.webp" class="cursor-zoom-in group shrink-0"><img src="assets/10.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Interior view of a fortified base sanctuary" loading="lazy" width="300" height="170"></a>
+            <a href="assets/11.webp" class="cursor-zoom-in group shrink-0"><img src="assets/11.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Vast landscape of the Nalcott region" loading="lazy" width="300" height="170"></a>
+            <a href="assets/12.webp" class="cursor-zoom-in group shrink-0"><img src="assets/12.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Nighttime survival in the mutated forest" loading="lazy" width="300" height="170"></a>
+            <a href="assets/13.webp" class="cursor-zoom-in group shrink-0"><img src="assets/13.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Encounter with a colossus boss in the mountains" loading="lazy" width="300" height="170"></a>
+            <a href="assets/14.webp" class="cursor-zoom-in group shrink-0"><img src="assets/14.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Customizing character gear and weapons" loading="lazy" width="300" height="170"></a>
+            <a href="assets/15.webp" class="cursor-zoom-in group shrink-0"><img src="assets/15.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Atmospheric ruins under the cosmic moon" loading="lazy" width="300" height="170"></a>
+            <!-- Duplicate for infinite scroll -->
+            <a href="assets/1.webp" class="cursor-zoom-in group shrink-0"><img src="assets/1.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Survivor in a mutated forest environment" loading="lazy" width="300" height="170"></a>
+            <a href="assets/2.webp" class="cursor-zoom-in group shrink-0"><img src="assets/2.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Abandoned city ruins overgrown with Stardust vegetation" loading="lazy" width="300" height="170"></a>
+            <a href="assets/3.webp" class="cursor-zoom-in group shrink-0"><img src="assets/3.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Tactical combat against a cosmic horror entity" loading="lazy" width="300" height="170"></a>
+            <a href="assets/4.webp" class="cursor-zoom-in group shrink-0"><img src="assets/4.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Sanctuary base building in a post-apocalyptic desert" loading="lazy" width="300" height="170"></a>
+            <a href="assets/5.webp" class="cursor-zoom-in group shrink-0"><img src="assets/5.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Close-up of a Deviant creature encounter" loading="lazy" width="300" height="170"></a>
+            <a href="assets/6.webp" class="cursor-zoom-in group shrink-0"><img src="assets/6.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Cinematic view of a sunset over the wasteland" loading="lazy" width="300" height="170"></a>
+            <a href="assets/7.webp" class="cursor-zoom-in group shrink-0"><img src="assets/7.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Team of survivors during an expedition" loading="lazy" width="300" height="170"></a>
+            <a href="assets/9.webp" class="cursor-zoom-in group shrink-0"><img src="assets/9.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Absorbing cosmic power from a fallen enemy" loading="lazy" width="300" height="170"></a>
+            <a href="assets/10.webp" class="cursor-zoom-in group shrink-0"><img src="assets/10.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Interior view of a fortified base sanctuary" loading="lazy" width="300" height="170"></a>
+            <a href="assets/11.webp" class="cursor-zoom-in group shrink-0"><img src="assets/11.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Vast landscape of the Nalcott region" loading="lazy" width="300" height="170"></a>
+            <a href="assets/12.webp" class="cursor-zoom-in group shrink-0"><img src="assets/12.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Nighttime survival in the mutated forest" loading="lazy" width="300" height="170"></a>
+            <a href="assets/13.webp" class="cursor-zoom-in group shrink-0"><img src="assets/13.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Encounter with a colossus boss in the mountains" loading="lazy" width="300" height="170"></a>
+            <a href="assets/14.webp" class="cursor-zoom-in group shrink-0"><img src="assets/14.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Customizing character gear and weapons" loading="lazy" width="300" height="170"></a>
+            <a href="assets/15.webp" class="cursor-zoom-in group shrink-0"><img src="assets/15.webp" class="h-28 md:h-36 lg:h-44 w-auto marquee-item group-hover:brightness-125 transition-all rounded-lg border border-white/5" alt="Atmospheric ruins under the cosmic moon" loading="lazy" width="300" height="170"></a>
+        </div>
+    </section>
+    
+
+    
+    <!-- Features Section -->
+    <section id="features" class="features-section py-6 px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-void to-cosmic"></div>
+        <!-- Decorative subtle grid -->
+        <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        
+        <div class="container mx-auto relative z-10 max-w-7xl">
+            <div class="text-center mb-6">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <span class="w-12 h-px bg-blood"></span>
+                    <span class="text-blood font-display tracking-[0.4em] text-sm font-bold" style="text-shadow: 0 0 10px rgba(230,0,0,0.5);" data-i18n="features-badge">CORE EXPERIENCE</span>
+                    <span class="w-12 h-px bg-blood"></span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black uppercase tracking-wide">
+                    <span class="text-white" data-i18n="features-title-1">SURVIVE</span> <span class="text-glow-red text-blood" data-i18n="features-title-2">THE IMPOSSIBLE</span>
+                </h2>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed" data-i18n="features-desc">Master the art of survival in a hostile sandbox where your environment, your enemies, and your choices shape your destiny.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(230,0,0,0.2)] bg-cosmic/80">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-1_759a48d4.png" alt="Open World" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-700 opacity-40 group-hover:opacity-60 mix-blend-luminosity group-hover:mix-blend-normal" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10 opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="relative z-20 p-8 h-full flex flex-col justify-end min-h-[400px]">
+                        <div class="w-16 h-16 bg-blood/10 backdrop-blur-md rounded-xl flex items-center justify-center mb-6 group-hover:bg-blood group-hover:scale-110 transition-all duration-500 border border-blood/30 shadow-[0_0_15px_rgba(230,0,0,0.3)]">
+                            <i class="fas fa-skull-crossbones text-3xl text-blood group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4 tracking-wide uppercase" data-i18n="card-cosmic-title">Cosmic Horror</h3>
+                        <p class="text-gray-400 group-hover:text-gray-200 transition-colors leading-relaxed text-sm" data-i18n="card-cosmic-desc">Face eldritch abominations twisted by Stardust. Every creature you hunt holds forbidden powers waiting to be claimed.</p>
+                        <div class="mt-6 flex items-center text-sm font-bold text-blood opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span>SCAVENGE & SURVIVE</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 (Highlight) -->
+                <div class="group relative rounded-2xl overflow-hidden border border-blood/50 hover:border-blood shadow-[0_0_20px_rgba(230,0,0,0.2)] hover:shadow-[0_0_50px_rgba(230,0,0,0.5)] transition-all duration-500 transform lg:-translate-y-4 bg-cosmic/80">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-3_04f56fbc.png" alt="Combat" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-80 mix-blend-luminosity group-hover:mix-blend-normal" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10 opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="relative z-20 p-8 h-full flex flex-col justify-end min-h-[400px]">
+                        <div class="w-16 h-16 bg-blood backdrop-blur-md rounded-xl flex items-center justify-center mb-6 scale-110 shadow-[0_0_20px_rgba(230,0,0,0.6)] animate-pulse">
+                            <i class="fas fa-bolt text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4 tracking-wide text-glow-red uppercase" data-i18n="card-devour-title">Devour Powers</h3>
+                        <p class="text-gray-300 leading-relaxed text-sm" data-i18n="card-devour-desc">Defeat the horrors and assimilate their abilities. Transform yourself into something neither fully human nor monster.</p>
+                        <div class="mt-6 flex items-center text-sm font-bold text-white group-hover:text-blood transition-colors duration-300">
+                            <span>MASTER ABILITIES</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(230,0,0,0.2)] bg-cosmic/80">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-5_0ff2a3c3.png" alt="Base Building" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-700 opacity-40 group-hover:opacity-60 mix-blend-luminosity group-hover:mix-blend-normal" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10 opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="relative z-20 p-8 h-full flex flex-col justify-end min-h-[400px]">
+                        <div class="w-16 h-16 bg-blood/10 backdrop-blur-md rounded-xl flex items-center justify-center mb-6 group-hover:bg-blood group-hover:scale-110 transition-all duration-500 border border-blood/30 shadow-[0_0_15px_rgba(230,0,0,0.3)]">
+                            <i class="fas fa-hammer text-3xl text-blood group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4 tracking-wide uppercase" data-i18n="card-defend-title">Defend & Rebuild</h3>
+                        <p class="text-gray-400 group-hover:text-gray-200 transition-colors leading-relaxed text-sm" data-i18n="card-defend-desc">Join millions worldwide. Construct elaborate fortresses, stockpile resources, and defend your territory against the nightmare.</p>
+                        <div class="mt-6 flex items-center text-sm font-bold text-blood opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span>FORM ALLIANCES</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Stats Bar -->
+            <div class="mt-8 border border-white/10 rounded-2xl bg-white/[0.02] backdrop-blur-md p-8 flex flex-wrap justify-between items-center gap-8 relative overflow-hidden group hover:border-blood/50 transition-colors duration-500">
+                <div class="absolute inset-0 bg-gradient-to-r from-blood/0 via-blood/5 to-blood/0 group-hover:via-blood/10 transition-all duration-500"></div>
+                
+                <div class="relative z-10 flex-1 min-w-[200px] text-center md:text-left">
+                    <div class="text-blood font-display text-4xl font-black mb-1 group-hover:text-glow-red transition-all" data-i18n="quick-1">12M+</div>
+                    <div class="text-gray-400 text-sm tracking-widest uppercase" data-i18n="quick-global">Global Survivors</div>
+                </div>
+                
+                <div class="hidden md:block w-px h-16 bg-white/10 relative z-10"></div>
+                
+                <div class="relative z-10 flex-1 min-w-[200px] text-center">
+                    <div class="text-white font-display text-4xl font-black mb-1"><span data-i18n="quick-2-num">256</span><span class="text-xl text-gray-500" data-i18n="quick-2-unit">km²</span></div>
+                    <div class="text-gray-400 text-sm tracking-widest uppercase" data-i18n="quick-world">Seamless Open World</div>
+                </div>
+                
+                <div class="hidden md:block w-px h-16 bg-white/10 relative z-10"></div>
+                
+                <div class="relative z-10 flex-1 min-w-[200px] text-center md:text-right">
+                    <div class="text-blood font-display text-4xl font-black mb-1 group-hover:text-glow-red transition-all" data-i18n="quick-3">100+</div>
+                    <div class="text-gray-400 text-sm tracking-widest uppercase" data-i18n="quick-enemies">Deviant Enemies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cinematic Showcase Section -->
+    <section class="showcase-section py-6 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-horror to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-4">
+                <span class="text-blood font-display tracking-[0.3em] text-xs" data-i18n="showcase-badge">THE WORLD</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mt-4" data-i18n="showcase-title">A WORLD REBORN IN CHAOS</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto" data-i18n="showcase-desc">Witness the haunting beauty of a post-apocalyptic world transformed by Stardust.</p>
+            </div>
+            
+            <!-- Main Showcase: Steam Header -->
+            <div class="showcase-hero relative rounded-2xl overflow-hidden group cursor-pointer mb-4">
+                <img src="assets/28.webp" alt="Once Human - Post-Apocalyptic World" data-i18n-alt="showcase-img-1" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-cosmic via-transparent to-transparent"></div>
+                <div class="absolute inset-0 border border-white/10 group-hover:border-blood/40 rounded-2xl transition-colors duration-300"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <span class="bg-blood/90 text-white text-xs px-4 py-2 rounded-full font-display tracking-wider" data-i18n="showcase-steam">AVAILABLE NOW ON STEAM</span>
+                </div>
+            </div>
+
+            <!-- Two Column: Animated GIF + Poster -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Animated Preview GIF -->
+                <div class="showcase-card relative rounded-2xl overflow-hidden group cursor-pointer aspect-video">
+                    <img src="assets/483890259_660459716493412_8159011387796922199_n.jpg" alt="STARDUST ANOMALIES" data-i18n-alt="showcase-anomalies-title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/40 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blood/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                                <i class="fas fa-ghost text-blood"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-display font-bold" data-i18n="showcase-anomalies-title">STARDUST ANOMALIES</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="showcase-anomalies-desc">The world shifts and transforms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cinematic Poster -->
+                <div class="showcase-card relative rounded-2xl overflow-hidden group cursor-pointer aspect-video">
+                    <img src="assets/ebe74338-8ebf-42d8-8f21-446d7322ba1a.jpg" alt="COSMIC HORROR" data-i18n-alt="showcase-horror-title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/40 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-purple-600/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                                <i class="fas fa-eye text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-display font-bold" data-i18n="showcase-horror-title">COSMIC HORROR</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="showcase-horror-desc">Face the unknowable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gameplay Video Grid -->
+    <section id="gameplay" class="gameplay-grid py-6 px-6 relative">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-6">
+                <span class="text-blood font-display tracking-[0.3em] text-xs" data-i18n="gameplay-badge">GAMEPLAY</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mt-4" data-i18n="gameplay-title">YOUR PATH TO SURVIVAL</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto" data-i18n="gameplay-desc">Every choice shapes your journey in this unforgiving world.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1: SURVIVE TOGETHER -->
+                <div class="gameplay-card relative overflow-hidden rounded-2xl group cursor-pointer aspect-[16/10]">
+                    <video class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" autoplay muted loop playsinline preload="metadata" poster="assets/img-1_759a48d4.png">
+                        <source src="https://oncehuman.v.easebar.com/2025/0526/3d3bf1f56d4544449fc83b7eb4484ed5.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic via-cosmic/30 to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-blood/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                                <i class="fas fa-users text-blood text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-display font-bold" data-i18n="gp-card1-title">SURVIVE TOGETHER</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="gp-card1-sub">Co-op Multiplayer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-w-md" data-i18n="gp-card1-desc">Team up with friends or strangers. Together, overcome challenges no single survivor could face alone.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2: BECOME THE MONSTER -->
+                <div class="gameplay-card relative overflow-hidden rounded-2xl group cursor-pointer aspect-[16/10]">
+                    <video class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" autoplay muted loop playsinline preload="metadata" poster="assets/img-2_b501c895.png">
+                        <source src="https://adsy.click/assets/videos1/%23gameplay/Once%20Human%20on%205.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic via-cosmic/30 to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-purple-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                                <i class="fas fa-dragon text-purple-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-display font-bold" data-i18n="gp-card2-title">BECOME THE MONSTER</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="gp-card2-sub">Power Absorption</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-w-md" data-i18n="gp-card2-desc">Consume the essence of defeated enemies. Gain their abilities and become something more than human.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: BUILD SANCTUARY -->
+                <div class="gameplay-card relative overflow-hidden rounded-2xl group cursor-pointer aspect-[16/10]">
+                    <video class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" autoplay muted loop playsinline preload="metadata" poster="assets/img-3_04f56fbc.png">
+                        <source src="https://adsy.click/assets/videos1/%23gameplay/Once%20Human%20on%203.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic via-cosmic/30 to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-emerald-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                                <i class="fas fa-home text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-display font-bold" data-i18n="gp-card3-title">BUILD SANCTUARY</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="gp-card3-sub">Base Building</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-w-md" data-i18n="gp-card3-desc">Construct and customize your fortress. Fortify defenses, craft gear, and create a haven in the chaos.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 4: EPIC BOSSES -->
+                <div class="gameplay-card relative overflow-hidden rounded-2xl group cursor-pointer aspect-[16/10]">
+                    <video class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" autoplay muted loop playsinline preload="metadata" poster="assets/img-4_9ed4f43b.png">
+                        <source src="https://shared.fastly.steamstatic.com/community_assets/images/items/2139460/0ae8c07ef7369ff538f52dbcdf62c7f92de2462c.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic via-cosmic/30 to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-amber-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                                <i class="fas fa-skull-crossbones text-amber-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-display font-bold" data-i18n="gp-card4-title">EPIC BOSSES</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="gp-card4-sub">Challenging Encounters</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-w-md" data-i18n="gp-card4-desc">Face colossal abominations that will test your skills, strategy, and courage to the limit.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: OPEN WORLD (Full Width) -->
+                <div class="gameplay-card relative overflow-hidden rounded-2xl group cursor-pointer aspect-[16/7] md:col-span-2">
+                    <video class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" autoplay muted loop playsinline preload="metadata" poster="assets/img-5_0ff2a3c3.png">
+                        <source src="https://adsy.click/assets/videos1/%23gameplay/Once%20Human%20on%202.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic via-cosmic/30 to-transparent"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-cyan-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                                <i class="fas fa-globe text-cyan-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-display font-bold" data-i18n="gp-card5-title">OPEN WORLD</h3>
+                                <p class="text-gray-400 text-sm" data-i18n="gp-card5-sub">Vast Exploration</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-w-lg" data-i18n="gp-card5-desc">Traverse a massive, seamless open world filled with hidden secrets, abandoned ruins, and dangers lurking in every shadow.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- ==================== GAME FEATURES SHOWCASE SECTION ==================== -->
+    <section id="game-features" class="game-features-section relative overflow-hidden" style="height: 100vh; min-height: 700px; isolation: isolate;">
+        <div class="absolute inset-0 bg-cosmic z-0"></div>
+        
+        <!-- Background texture overlay -->
+        <div class="absolute inset-0 z-[1] pointer-events-none" style="background: url('https://www.oncehuman.game/pc/gw/20250418171534/img/feature-bg_52154c31.jpg') center/cover; opacity: 0.15; mix-blend-mode: overlay;"></div>
+        
+        <!-- Feature Slides -->
+        <div class="feature-slider relative w-full h-full z-[2]" id="feature-slider">
+            <!-- Slide 1: Survive the Chaos -->
+            <div class="feature-slide active absolute inset-0" data-index="0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                <!-- Main Image - Centered between sidebar zones -->
+                <div class="absolute inset-0 flex items-center justify-center lg:pl-32 lg:pr-10 2xl:pl-48 2xl:pr-12">
+                    <img src="assets/img-1_759a48d4.png" class="w-full max-w-[950px] h-auto object-contain rounded-xl shadow-[0_0_60px_rgba(0,0,0,0.8)] border border-white/5" alt="Open World Gameplay" loading="lazy">
+                </div>
+                <!-- Character overlay - Shifted to avoid sidebar -->
+                <div class="feature-char absolute bottom-0 left-[5%] lg:left-[8%] 2xl:left-[10%] z-[10] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/1_83e0569d.png" class="w-full h-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]" alt="Character" loading="lazy">
+                </div>
+                <!-- Title overlay - Positioned clearly -->
+                <div class="feature-tit absolute z-[11] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/tit-1_58d52494.png" class="w-full h-auto" alt="Survive the Chaos" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Slide 2: Confront the Unknown -->
+            <div class="feature-slide absolute inset-0" data-index="1">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                <div class="absolute inset-0 flex items-center justify-center lg:pl-32 lg:pr-10 2xl:pl-48 2xl:pr-12">
+                    <img src="assets/img-2_b501c895.png" class="w-full max-w-[950px] h-auto object-contain rounded-xl shadow-[0_0_60px_rgba(0,0,0,0.8)] border border-white/5" alt="Combat Gameplay" loading="lazy">
+                </div>
+                <div class="feature-char absolute bottom-0 left-[5%] lg:left-[8%] 2xl:left-[10%] z-[10] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/2_66b20784.png" class="w-full h-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]" alt="Character" loading="lazy">
+                </div>
+                <div class="feature-tit absolute z-[11] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/tit-2_1f3e6898.png" class="w-full h-auto" alt="Confront the Unknown" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Slide 3: Build Your Shelter -->
+            <div class="feature-slide absolute inset-0" data-index="2">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                <div class="absolute inset-0 flex items-center justify-center lg:pl-32 lg:pr-10 2xl:pl-48 2xl:pr-12">
+                    <img src="assets/img-3_04f56fbc.png" class="w-full max-w-[950px] h-auto object-contain rounded-xl shadow-[0_0_60px_rgba(0,0,0,0.8)] border border-white/5" alt="Building Gameplay" loading="lazy">
+                </div>
+                <div class="feature-char absolute bottom-0 left-[5%] lg:left-[8%] 2xl:left-[10%] z-[10] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/3_986f9463.png" class="w-full h-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]" alt="Character" loading="lazy">
+                </div>
+                <div class="feature-tit absolute z-[11] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/tit-3_290c16c8.png" class="w-full h-auto" alt="Build Your Shelter" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Slide 4: Wield Deviant Powers -->
+            <div class="feature-slide absolute inset-0" data-index="3">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                <div class="absolute inset-0 flex items-center justify-center lg:pl-32 lg:pr-10 2xl:pl-48 2xl:pr-12">
+                    <img src="assets/img-4_9ed4f43b.png" class="w-full max-w-[950px] h-auto object-contain rounded-xl shadow-[0_0_60px_rgba(0,0,0,0.8)] border border-white/5" alt="Powers Gameplay" loading="lazy">
+                </div>
+                <div class="feature-char absolute bottom-0 left-[5%] lg:left-[8%] 2xl:left-[10%] z-[10] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/4_9139b3a7.png" class="w-full h-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]" alt="Character" loading="lazy">
+                </div>
+                <div class="feature-tit absolute z-[11] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/tit-4_05985588.png" class="w-full h-auto" alt="Wield Deviant Powers" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Slide 5: Explore Boundless Worlds -->
+            <div class="feature-slide absolute inset-0" data-index="4">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                <div class="absolute inset-0 flex items-center justify-center lg:pl-32 lg:pr-10 2xl:pl-48 2xl:pr-12">
+                    <img src="assets/img-5_0ff2a3c3.png" class="w-full max-w-[950px] h-auto object-contain rounded-xl shadow-[0_0_60px_rgba(0,0,0,0.8)] border border-white/5" alt="Exploration Gameplay" loading="lazy">
+                </div>
+                <div class="feature-char absolute bottom-0 left-[5%] lg:left-[8%] 2xl:left-[10%] z-[10] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/5_210064fc.png" class="w-full h-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]" alt="Character" loading="lazy">
+                </div>
+                <div class="feature-tit absolute z-[11] pointer-events-none">
+                    <img src="https://www.oncehuman.game/pc/gw/20250418171534/img/tit-5_6b72ffa6.png" class="w-full h-auto" alt="Explore Boundless Worlds" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[50] flex items-center gap-4">
+            <button id="feature-prev" class="w-10 h-10 bg-black/60 hover:bg-blood/50 border border-white/30 hover:border-blood rounded-full flex items-center justify-center text-white transition-all cursor-pointer" style="position: relative; z-index: 50;" aria-label="Previous feature slide">
+                <i class="fas fa-chevron-left text-sm"></i>
+            </button>
+            <div class="flex items-center gap-3" id="feature-dots">
+                <button class="feature-dot active w-3 h-3 rounded-sm transition-all duration-300 cursor-pointer" data-index="0" aria-label="Go to slide 1"></button>
+                <button class="feature-dot w-3 h-3 rounded-sm transition-all duration-300 cursor-pointer" data-index="1" aria-label="Go to slide 2"></button>
+                <button class="feature-dot w-3 h-3 rounded-sm transition-all duration-300 cursor-pointer" data-index="2" aria-label="Go to slide 3"></button>
+                <button class="feature-dot w-3 h-3 rounded-sm transition-all duration-300 cursor-pointer" data-index="3" aria-label="Go to slide 4"></button>
+                <button class="feature-dot w-3 h-3 rounded-sm transition-all duration-300 cursor-pointer" data-index="4" aria-label="Go to slide 5"></button>
+            </div>
+            <button id="feature-next" class="w-10 h-10 bg-black/60 hover:bg-blood/50 border border-white/30 hover:border-blood rounded-full flex items-center justify-center text-white transition-all cursor-pointer" style="position: relative; z-index: 50;" aria-label="Next feature slide">
+                <i class="fas fa-chevron-right text-sm"></i>
+            </button>
+        </div>
+    </section>
+    
+    <!-- Screenshot Gallery Section -->
+    <section id="gallery" class="gallery-section py-6 px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-void to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-6">
+                <span class="text-blood font-display tracking-[0.3em] text-xs" data-i18n="gallery-badge">GALLERY</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mt-4" data-i18n="gallery-title">EXPLORE THE WASTELAND</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto" data-i18n="gallery-desc">Breathtaking vistas, terrifying encounters, and moments that define your story.</p>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Large Feature Image -->
+                <div class="gallery-item gallery-item-featured group relative overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/7_1cd88d69.png" alt="Once Human Gameplay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/90 via-cosmic/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="inline-block bg-blood/80 text-white text-xs px-3 py-1.5 rounded-full font-display tracking-wider mb-2" data-i18n="gallery-featured">FEATURED</span>
+                        <h3 class="text-xl font-display font-bold" data-i18n="gallery-featured-title">INTO THE UNKNOWN</h3>
+                        <p class="text-gray-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-i18n="gallery-featured-desc">Every expedition tells a different story</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-1_759a48d4.png" alt="Once Human Environment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-4 left-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg"><i class="fas fa-expand-alt mr-1.5"></i><span data-i18n="gallery-label-openworld">OPEN WORLD</span></span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-2_b501c895.png" alt="Once Human Combat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-4 left-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg"><i class="fas fa-crosshairs mr-1.5"></i><span data-i18n="gallery-label-combat">COMBAT</span></span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-3_04f56fbc.png" alt="Once Human Creatures" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-4 left-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg"><i class="fas fa-dragon mr-1.5"></i><span data-i18n="gallery-label-creatures">CREATURES</span></span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-4_9ed4f43b.png" alt="Once Human Exploration" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-4 left-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg"><i class="fas fa-compass mr-1.5"></i><span data-i18n="gallery-label-exploration">EXPLORATION</span></span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/img-5_0ff2a3c3.png" alt="Once Human Base Building" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cosmic/80 via-transparent to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border border-white/10 group-hover:border-blood/50 rounded-2xl transition-colors duration-300"></div>
+                    <div class="absolute bottom-4 left-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg"><i class="fas fa-hammer mr-1.5"></i><span data-i18n="gallery-label-building">BUILDING</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="live-ops py-6 px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-void to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-6">
+                <span class="text-blood font-display tracking-[0.3em] text-xs" data-i18n="community-badge">COMMUNITY</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mt-4" data-i18n="community-title">LIVE OPERATIONS</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto" data-i18n="community-desc">Watch top streamers survive the nightmare in real-time.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Streamer 1 -->
+                <a href="https://www.youtube.com/live/PucKziO-d1I?si=sWYCXeWSv2OrB2cW" class="video-trigger stream-card block relative bg-white/[0.03] backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-blood/40 transition-all duration-300" aria-label="Watch Shroud live stream on YouTube">
+                    <div class="relative">
+                        <img src="https://i.ytimg.com/vi/PucKziO-d1I/hqdefault.jpg" alt="shroud" class="w-full h-44 object-cover" loading="lazy">
+                        <div class="absolute inset-0 bg-cosmic/60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="w-16 h-16 bg-blood rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-2xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                            <span class="bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold tracking-wide" data-i18n="comm-live">LIVE</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg">
+                            <i class="fas fa-eye mr-1.5"></i><span data-i18n="comm-watching-1">45.2K watching</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Streamer 2 -->
+                <a href="https://www.youtube.com/live/wfeOjVb_COw?si=UO6K4lHgvA1YMNJx" class="video-trigger stream-card block relative bg-white/[0.03] backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-blood/40 transition-all duration-300" aria-label="Watch Lirik live stream on YouTube">
+                    <div class="relative">
+                        <img src="https://i.ytimg.com/vi/wfeOjVb_COw/hqdefault.jpg" alt="Lirik" class="w-full h-44 object-cover" loading="lazy">
+                        <div class="absolute inset-0 bg-cosmic/60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="w-16 h-16 bg-blood rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-2xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                            <span class="bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold tracking-wide" data-i18n="comm-live">LIVE</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg">
+                            <i class="fas fa-eye mr-1.5"></i><span data-i18n="comm-watching-2">32.1K watching</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Streamer 3 -->
+                <a href="https://www.youtube.com/live/us1Cry5Y2_w?si=yF8DWtotNxFiIt_2" class="video-trigger stream-card block relative bg-white/[0.03] backdrop-blur-sm rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-blood/40 transition-all duration-300" aria-label="Watch Summit1g live stream on YouTube">
+                    <div class="relative">
+                        <img src="https://i.ytimg.com/vi/us1Cry5Y2_w/hqdefault.jpg" alt="Summit1g" class="w-full h-44 object-cover" loading="lazy">
+                        <div class="absolute inset-0 bg-cosmic/60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="w-16 h-16 bg-blood rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-2xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                            <span class="bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold tracking-wide" data-i18n="comm-live">LIVE</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg">
+                            <i class="fas fa-eye mr-1.5"></i><span data-i18n="comm-watching-3">28.7K watching</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- ==================== SCENARIO TIMELINE SECTION ==================== -->
+    <section id="scenarios" class="scenario-section py-6 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-horror to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-4">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <span class="w-12 h-px bg-blood"></span>
+                    <span class="text-blood font-display tracking-[0.4em] text-sm font-bold" style="text-shadow: 0 0 10px rgba(230,0,0,0.5); filter: brightness(1.2);" data-i18n="scenario-badge">STORY</span>
+                    <span class="w-12 h-px bg-blood"></span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black uppercase tracking-wide">
+                    <span class="text-white" data-i18n="scenario-title-1">SCENARIO</span> <span class="text-glow-red text-blood" data-i18n="scenario-title-2">TIMELINE</span>
+                </h2>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed" data-i18n="scenario-desc">The world is ever-changing. Each scenario brings new challenges, enemies, and stories to uncover.</p>
+            </div>
+
+            <!-- Scenario Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-6" id="scenario-tabs">
+                <button class="scenario-tab active px-5 py-2.5 rounded-lg text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="0" data-i18n="scenario-tab-1" aria-label="View Deviation scenario details">Deviation</button>
+                <button class="scenario-tab px-5 py-2.5 rounded-lg text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="1" data-i18n="scenario-tab-2" aria-label="View Endless Dream scenario details">Endless Dream</button>
+                <button class="scenario-tab px-5 py-2.5 rounded-lg text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="2" data-i18n="scenario-tab-3" aria-label="View Way of Winter scenario details">Way of Winter</button>
+                <button class="scenario-tab px-5 py-2.5 rounded-lg text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="3" data-i18n="scenario-tab-4" aria-label="View Prismverse scenario details">Prismverse</button>
+                <button class="scenario-tab px-5 py-2.5 rounded-lg text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="4" data-i18n="scenario-tab-5" aria-label="View Evolution's Call scenario details">Evolution's Call</button>
+                <button class="scenario-tab px-5 py-2.5 rounded-lg text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="5" data-i18n="scenario-tab-6" aria-label="View Manibus scenario details">Manibus</button>
+            </div>
+
+            <!-- Scenario Content -->
+            <div class="scenario-panels relative rounded-2xl overflow-hidden border border-white/10" style="min-height: 450px;">
+                <div class="scenario-panel active" data-index="0">
+                    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata" aria-label="Visual of the Deviation scenario">
+                        <source src="https://oncehuman.v.easebar.com/2025/1022/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="text-blood text-xs font-display tracking-widest uppercase" data-i18n="scenario-date-1">10 / 2025</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="scenario-content-title-1">Deviation: Survive, Capture, Preserve</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="scenario-content-desc-1">The world is undergoing mutations; anomalies are spreading. Here, Deviations will break free from their constraints and encounter all Metas, more freely and vividly this time.</p>
+                    </div>
+                </div>
+                <div class="scenario-panel" data-index="1">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="none">
+                        <source src="https://oncehuman.v.easebar.com/2025/0626/bg.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="text-blood text-xs font-display tracking-widest uppercase" data-i18n="scenario-date-2">07 / 2025</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="scenario-content-title-2">Endless Dream</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="scenario-content-desc-2">As the nightmare mist gradually spreads and erodes the Nalcott, Metas, all you can do is maintain your sanity, purify the fog, and eliminate the source of the nightmares. Break free from the layers of fear and restore the world to its former glory.</p>
+                    </div>
+                </div>
+                <div class="scenario-panel" data-index="2">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="none">
+                        <source src="https://oncehuman.v.easebar.com/2025/0415/xgrs.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="text-blood text-xs font-display tracking-widest uppercase" data-i18n="scenario-date-3">10 / 2024</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="scenario-content-title-3">THE WAY OF WINTER</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="scenario-content-desc-3">The relentless march of time continues. From the desolate Eastern wilderness to the frigid Northern mountains, new adversaries, allies, and even more abhorrent deviants await! Your next harrowing journey is about to begin.</p>
+                    </div>
+                </div>
+                <div class="scenario-panel" data-index="3">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2025/0415/nwzz.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="text-blood text-xs font-display tracking-widest uppercase" data-i18n="scenario-date-4">09 / 2024</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="scenario-content-title-4">PRISMVERSE'S CLASH</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="scenario-content-desc-4">The Mayflies and Rosetta are locked in a ghastly rivalry, and you are compelled to align with one. Their interests collide as they both seek to harness the powers of a unique breed of deviations known as Prism Deviations to avert the imminent catastrophe looming over the world.</p>
+                    </div>
+                </div>
+                <div class="scenario-panel" data-index="4">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2025/0416/fqzl.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="text-blood text-xs font-display tracking-widest uppercase" data-i18n="scenario-date-5">07 / 2024</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="scenario-content-title-5">Evolution's Call</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="scenario-content-desc-5">Conflict reigns supreme in this world, as the borderlands become battlegrounds for Meta-humans, with strongholds constantly shifting hands. Now, your Warband calls for your aid in the relentless struggle for survival.</p>
+                    </div>
+                </div>
+                <div class="scenario-panel" data-index="5">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2025/0416/tkzc.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="text-blood text-xs font-display tracking-widest uppercase" data-i18n="scenario-date-6">07 / 2024</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="scenario-content-title-6">Manibus</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="scenario-content-desc-6">The eldritch entity known as the Manibus is unleashing terror upon the world, and you must gather allies to confront it in the Prime War, lest you fall under its sinister grasp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VISIONAL WHEEL SECTION ==================== -->
+    <section id="seasons" class="season-section py-6 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-void to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-4">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <span class="w-12 h-px bg-blood"></span>
+                    <span class="text-blood font-display tracking-[0.4em] text-sm font-bold" style="text-shadow: 0 0 10px rgba(230,0,0,0.5); filter: brightness(1.2);" data-i18n="updates-badge">UPDATES</span>
+                    <span class="w-12 h-px bg-blood"></span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black uppercase tracking-wide">
+                    <span class="text-white" data-i18n="vw-title-1">VISIONAL</span> <span class="text-glow-red text-blood" data-i18n="vw-title-2">WHEEL</span>
+                </h2>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed" data-i18n="vw-desc">The Visional Wheel turns, bringing new challenges, rules, and rewards each season.</p>
+            </div>
+
+            <!-- Season Tabs with Thumbnails -->
+            <div class="flex justify-center gap-4 mb-6 flex-wrap" id="season-tabs">
+                <button class="season-tab active group" data-index="0" aria-label="View Season 3: Aberrant Progeny details">
+                    <div class="relative w-40 h-24 rounded-xl overflow-hidden border-2 transition-all duration-300">
+                        <img src="assets/img-jbbq_ff311c2b.jpg" class="w-full h-full object-cover" alt="Season 3 Thumbnail" loading="lazy" width="160" height="96">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="absolute bottom-2 left-2 text-xs font-display font-bold text-white drop-shadow-lg" data-i18n="vw-s3">S3</span>
+                    </div>
+                </button>
+                <button class="season-tab group" data-index="1" aria-label="View Season 2: Lunar Revelry details">
+                    <div class="relative w-40 h-24 rounded-xl overflow-hidden border-2 transition-all duration-300">
+                        <img src="assets/img-yzkh_1cb0640d.jpg" class="w-full h-full object-cover" alt="Season 2 Thumbnail" loading="lazy" width="160" height="96">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="absolute bottom-2 left-2 text-xs font-display font-bold text-white drop-shadow-lg" data-i18n="vw-s2">S2</span>
+                    </div>
+                </button>
+                <button class="season-tab group" data-index="2" aria-label="View Season 1: Starfall Inversion details">
+                    <div class="relative w-40 h-24 rounded-xl overflow-hidden border-2 transition-all duration-300">
+                        <img src="assets/img-ngxl_13adb5bb.jpg" class="w-full h-full object-cover" alt="Season 1 Thumbnail" loading="lazy" width="160" height="96">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="absolute bottom-2 left-2 text-xs font-display font-bold text-white drop-shadow-lg" data-i18n="vw-s1">S1</span>
+                    </div>
+                </button>
+                <button class="season-tab group" data-index="3" aria-label="View Season 0: Lunar Oracle details">
+                    <div class="relative w-40 h-24 rounded-xl overflow-hidden border-2 transition-all duration-300">
+                        <img src="assets/img-yzyz_9eed6351.jpg" class="w-full h-full object-cover" alt="Season 0 Thumbnail" loading="lazy" width="160" height="96">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                        <span class="absolute bottom-2 left-2 text-xs font-display font-bold text-white drop-shadow-lg" data-i18n="vw-s0">S0</span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Season Content -->
+            <div class="season-panels relative rounded-2xl overflow-hidden border border-white/10" style="min-height: 450px;">
+                <div class="season-panel active" data-index="0">
+                    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2026/0119/20260119.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="inline-block bg-blood/20 border border-blood text-white text-xs px-3 py-1 rounded font-display tracking-widest mb-3" data-i18n="vw-s3-badge">VISIONAL WHEEL S3</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="vw-s3-title">ABERRANT PROGENY</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="vw-s3-desc">In Visional Wheel S3: Aberrant Progeny, Metas will gain direct access to aberrant abilities to tackle dire survival challenges. Petrify your foes with the Watcher's gaze or incinerate enemies with the Scorcher's flames. Three polluted zones have also opened—players must strategically utilize monstrous powers to conquer zone-specific rules and unlock exclusive rewards.</p>
+                    </div>
+                </div>
+                <div class="season-panel" data-index="1">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2025/0917/68ca82e023e3f4b1499209478YBtGYBt06.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="inline-block bg-blood/20 border border-blood text-white text-xs px-3 py-1 rounded font-display tracking-widest mb-3" data-i18n="vw-s2-badge">VISIONAL WHEEL S2</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="vw-s2-title">Lunar Revelry</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="vw-s2-desc">A crimson moon rises, enshrouding all realms in its light. A doom forever yet to come will descend once again. The Blood Moon will manipulate Nalcott for its amusement, provoking conflict among humans with tempting treasures. Only by defeating its avatar, the Lord of Moonlight, will you earn the ultimate reward.</p>
+                    </div>
+                </div>
+                <div class="season-panel" data-index="2">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2025/0526/3d3bf1f56d4544449fc83b7eb4484ed5.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="inline-block bg-blood/20 border border-blood text-white text-xs px-3 py-1 rounded font-display tracking-widest mb-3" data-i18n="vw-s1-badge">VISIONAL WHEEL S1</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="vw-s1-title">STARFALL INVERSION</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="vw-s1-desc">A colossal, shattered star looms in the heavens, its gravitational tides sweeping across Nalcott. Under their aberrant influence, objects and structures on the surface begin to rise uncontrollably. Yet, amid the chaos lie hidden challenges, treasures, and lots of fun! Are you ready to ascend into the sky?</p>
+                    </div>
+                </div>
+                <div class="season-panel" data-index="3">
+                    <video class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="metadata">
+                        <source src="https://oncehuman.v.easebar.com/2025/0416/xueyue.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10">
+                        <span class="inline-block bg-blood/20 border border-blood text-white text-xs px-3 py-1 rounded font-display tracking-widest mb-3" data-i18n="vw-s0-badge">VISIONAL WHEEL S0</span>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4" data-i18n="vw-s0-title">Lunar Oracle</h3>
+                        <p class="text-gray-300 max-w-2xl leading-relaxed" data-i18n="vw-s0-desc">At dusk, a crimson moon rises, spreading a mysterious infection among both Deviants and Meta-Humans. A game of risk and reward is about to begin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHARACTER CLASS SECTION ==================== -->
+    <section id="classes" class="classes-section py-6 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-horror to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-4">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <span class="w-12 h-px bg-blood"></span>
+                    <span class="text-blood font-display tracking-[0.4em] text-sm font-bold" style="text-shadow: 0 0 10px rgba(230,0,0,0.5); filter: brightness(1.2);" data-i18n="chars-badge">CHARACTERS</span>
+                    <span class="w-12 h-px bg-blood"></span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black uppercase tracking-wide">
+                    <span class="text-white" data-i18n="chars-title-1">CHARACTER</span> <span class="text-glow-red text-blood" data-i18n="chars-title-2">CLASSES</span>
+                </h2>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed" data-i18n="chars-desc">Choose your path. Each class offers unique abilities and play styles.</p>
+            </div>
+
+            <!-- Class Tabs -->
+            <div class="flex justify-center gap-4 mb-6" id="class-tabs">
+                <button class="class-tab active px-6 py-3 rounded-xl text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="0">
+                    <i class="fas fa-crosshairs mr-2"></i><span data-i18n="chars-striker">STRIKER</span>
+                </button>
+                <button class="class-tab px-6 py-3 rounded-xl text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="1">
+                    <i class="fas fa-shield-alt mr-2"></i><span data-i18n="chars-guardian">GUARDIAN</span>
+                </button>
+                <button class="class-tab px-6 py-3 rounded-xl text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="2">
+                    <i class="fas fa-tools mr-2"></i><span data-i18n="chars-support">SUPPORT</span>
+                </button>
+            </div>
+
+            <!-- Class Panels -->
+            <div class="class-panels relative">
+                <div class="class-panel active" data-index="0">
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-cosmic/50">
+                        <img src="assets/zhiye_lh1_968083c7.png" class="w-full h-auto object-cover max-h-[600px]" alt="Striker class character in tactical gear" data-i18n-alt="chars-striker" loading="lazy" width="800" height="600">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute top-8 left-8 z-10">
+                            <img src="assets/text-js1_68920b2c.png" class="max-w-md w-full h-auto" alt="Striker Info" data-i18n-alt="chars-striker" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="class-panel" data-index="1">
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-cosmic/50">
+                        <img src="assets/zhiye_lh2_24acaa85.png" class="w-full h-auto object-cover max-h-[600px]" alt="Guardian class character with heavy armor and shield" data-i18n-alt="chars-guardian" loading="lazy" width="800" height="600">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute top-8 left-8 z-10">
+                            <img src="assets/text-js2_ade7a1d0.png" class="max-w-md w-full h-auto" alt="Guardian Info" data-i18n-alt="chars-guardian" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="class-panel" data-index="2">
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-cosmic/50">
+                        <img src="assets/zhiye_lh3_266702db.png" class="w-full h-auto object-cover max-h-[600px]" alt="Support class character with medical and tactical equipment" data-i18n-alt="chars-support" loading="lazy" width="800" height="600">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute top-8 left-8 z-10">
+                            <img src="assets/text-js3_1beffabe.png" class="max-w-md w-full h-auto" alt="Support Info" data-i18n-alt="chars-support" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEVIATIONS & DEVIANTS SECTION ==================== -->
+    <section id="codex" class="codex-section py-6 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-void to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-4">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <span class="w-12 h-px bg-blood"></span>
+                    <span class="text-blood font-display tracking-[0.4em] text-sm font-bold" style="text-shadow: 0 0 10px rgba(230,0,0,0.5); filter: brightness(1.2);" data-i18n="codex-badge">CODEX</span>
+                    <span class="w-12 h-px bg-blood"></span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black uppercase tracking-wide">
+                    <span class="text-white" data-i18n="codex-title-1">DEVIATIONS</span> <span class="text-glow-red text-blood" data-i18n="codex-title-2">& DEVIANTS</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- DEVIATIONS Column -->
+                <div>
+                    <h3 class="text-2xl font-display font-bold mb-3 text-cyan-400" data-i18n="codex-dev-title">DEVIATIONS</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed text-sm" data-i18n="codex-dev-desc">There is something inexplicable on this planet—the Deviations. They defy logic and possess supernatural powers beyond life, time, and thermodynamics. Most are animated and sentient.</p>
+                    <div class="space-y-4">
+                        <!-- Territory -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-cyan-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/kl-1_15496aa6.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Territory" data-i18n-alt="codex-territory-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-territory-title">TERRITORY</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-territory-desc">They help Meta-Humans look after their territories, taking over daily tasks so the Meta-Humans can explore the world more freely.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Combat -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-cyan-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/kl-2_807b015a.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Combat" data-i18n-alt="codex-combat-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-combat-title">COMBAT</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-combat-desc">They fight alongside Meta-Humans, providing support in battles and world exploration. They can expose enemies' weak points or transform into walls to block projectiles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Crafting -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-cyan-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/kl-3_739227a1.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Crafting" data-i18n-alt="codex-crafting-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-crafting-title">CRAFTING</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-crafting-desc">They provide Meta-Humans with enhancement potions, tactical items, or peculiar gadgets. Drink a whimsical potion and turn into a chair that hides in plain sight.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEVIANTS Column -->
+                <div>
+                    <h3 class="text-2xl font-display font-bold mb-3 text-red-400" data-i18n="codex-deviants-title">DEVIANTS</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed text-sm" data-i18n="codex-deviants-desc">Most creatures affected by Stardust transform into Deviants, while few can become Meta-Humans. Deviants aren't aggressive at first before being overcome by primordial instincts, turning savage and brutal.</p>
+                    <div class="space-y-4">
+                        <!-- Wanderer -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/hx-1_6559f412.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wanderer" data-i18n-alt="codex-wanderer-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-wanderer-title">WANDERER</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-wanderer-desc">The "Wanderers" tirelessly travel along their paths, as if reenacting every ordinary day before the Starfall. They have no destination, nor can they find their way back.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ravenous Hunter -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/hx-2_b47e444b.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Ravenous Hunter" data-i18n-alt="codex-hunter-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-hunter-title">RAVENOUS HUNTER</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-hunter-desc">Devour everything, possess everything. Life itself will be transformed into an eternal gluttony!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Treant -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/hx-3_c75e21f7.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Treant" data-i18n-alt="codex-treant-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-treant-title">TREANT</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-treant-desc">Return peacefully to nature's warm embrace and feel the cruel compassion of Gaia, the mother of all things, and the blessing of all souls!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shadow Hound -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/hx-4_46c7abfd.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Shadow Hound" data-i18n-alt="codex-shadow-title" loading="lazy" width="80" height="80">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-shadow-title">SHADOW HOUND</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-shadow-desc">Chaser of the shadows, all that is flesh and blood is yours to dominate. Life itself will be offered up to you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Forsaken Giant -->
+                        <div class="codex-card group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer">
+                            <div class="flex items-center gap-4 p-5">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                                    <img src="assets/hx-5_0f7496f9.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Forsaken Giant" data-i18n-alt="codex-giant-title" loading="lazy">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-display font-bold text-white" data-i18n="codex-giant-title">FORSAKEN GIANT</h4>
+                                    <p class="text-gray-500 text-xs mt-1 leading-relaxed group-hover:text-gray-300 transition-colors" data-i18n="codex-giant-desc">Is forgetting really such a bad thing? Perhaps for those who have been forgotten, it's the act of remembrance that truly hurts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MEDIA CENTER SECTION ==================== -->
+    <section id="media" class="media-section py-6 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-horror to-cosmic"></div>
+        <div class="container mx-auto relative z-10 max-w-6xl">
+            <div class="text-center mb-4">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <span class="w-12 h-px bg-blood"></span>
+                    <span class="text-blood font-display tracking-[0.4em] text-sm font-bold" style="text-shadow: 0 0 10px rgba(230,0,0,0.5); filter: brightness(1.2);" data-i18n="media-badge">MEDIA</span>
+                    <span class="w-12 h-px bg-blood"></span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black uppercase tracking-wide">
+                    <span class="text-white" data-i18n="media-title-1">MEDIA</span> <span class="text-glow-red text-blood" data-i18n="media-title-2">CENTER</span>
+                </h2>
+            </div>
+
+            <!-- Media Tabs -->
+            <div class="flex justify-center gap-4 mb-6" id="media-tabs">
+                <button class="media-tab active px-6 py-3 rounded-xl text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="0">
+                    <i class="fas fa-play-circle mr-2"></i><span data-i18n="media-trailers">TRAILERS</span>
+                </button>
+                <button class="media-tab px-6 py-3 rounded-xl text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="1">
+                    <i class="fas fa-camera mr-2"></i><span data-i18n="media-screens">SCREENSHOTS</span>
+                </button>
+                <button class="media-tab px-6 py-3 rounded-xl text-sm font-display font-bold tracking-wider transition-all duration-300 border" data-index="2">
+                    <i class="fas fa-image mr-2"></i><span data-i18n="media-walls">WALLPAPERS</span>
+                </button>
+            </div>
+
+            <!-- Media Panels -->
+            <div class="media-panels">
+                <!-- Trailers Panel -->
+                <div class="media-panel active" data-index="0">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="https://www.youtube.com/watch?v=I_sZiB4F3E0&t=29s" class="video-trigger group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/483X272-1_b05a5593.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trailer 1" loading="lazy" width="483" height="272">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <div class="w-14 h-14 bg-blood/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(230,0,0,0.5)]">
+                                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=7MEJP6H2mLA" class="video-trigger group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/483X272-2_bdfee024.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trailer 2" loading="lazy" width="483" height="272">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <div class="w-14 h-14 bg-blood/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(230,0,0,0.5)]">
+                                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=DKDmIQ2BxDY" class="video-trigger group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/483X272-3_3d31d5c1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trailer 3" loading="lazy" width="483" height="272">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <div class="w-14 h-14 bg-blood/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(230,0,0,0.5)]">
+                                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=8DD0NjmQv-Q" class="video-trigger group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/483X272-4_2611cd9c.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trailer 4" loading="lazy" width="483" height="272">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <div class="w-14 h-14 bg-blood/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(230,0,0,0.5)]">
+                                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=XTwOAAGhLCk" class="video-trigger group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/483X272-5_3fde6084.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trailer 5" loading="lazy" width="483" height="272">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <div class="w-14 h-14 bg-blood/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(230,0,0,0.5)]">
+                                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=HmtpBiql8kQ&t=30s" class="video-trigger group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/483X272-6_3b476f0e.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trailer 6" loading="lazy" width="483" height="272">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <div class="w-14 h-14 bg-blood/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(230,0,0,0.5)]">
+                                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Screenshots Panel -->
+                <div class="media-panel" data-index="1">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/1-1920x1080_b335b29b.jpg" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/1-326x204_5ac6deae.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Screenshot 1" loading="lazy" width="326" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-expand text-white text-xl"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/2-1920x1080_df10f382.jpg" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/2-326x204_7fcd7a9a.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Screenshot 2" loading="lazy" width="326" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-expand text-white text-xl"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/3-1920x1080_36818aba.jpg" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/3-326x204_72933fa4.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Screenshot 3" loading="lazy" width="326" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-expand text-white text-xl"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/4-1920x1080_8a79abf2.jpg" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/4-326x204_042a8124.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Screenshot 4" loading="lazy" width="326" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-expand text-white text-xl"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/5-1920x1080_19b18325.jpg" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/5-326x204_f989f991.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Screenshot 5" loading="lazy" width="326" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-expand text-white text-xl"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/6-1920x1080_5fb9ac66.jpg" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-video">
+                            <img src="assets/6-326x204_45a27c41.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Screenshot 6" loading="lazy" width="326" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-expand text-white text-xl"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Wallpapers Panel -->
+                <div class="media-panel" data-index="2">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/08_96c28903.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/08-362_589dc2f2.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/07_53313803.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/07-362_0dd22771.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/06_d590c767.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/06-362_b8875a4a.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/05_c4d9b9ef.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/05-362_934090d6.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/04_1367eaa8.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/04-362_69d19078.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/03_b7e8c5d0.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/03-362_dec3b3a0.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/02_e267d31a.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/02-362_2d00e498.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                        <a href="https://www.oncehuman.game/pc/gw/20250418171534/img/01_66bb3266.png" target="_blank" class="group relative rounded-xl overflow-hidden border border-white/10 hover:border-blood/50 transition-all duration-300 aspect-[362/204]">
+                            <img src="assets/01-362_cd8b41df.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wallpaper" loading="lazy" width="362" height="204">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 flex items-center justify-center"><i class="fas fa-download text-white text-lg"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Final CTA Section -->
+    <section id="download" class="cta-section py-16 px-6 relative overflow-hidden border-t border-blood/20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://www.oncehuman.game/pc/fab/20250114111146/img/7_1cd88d69.png" alt="Once Human Background" class="w-full h-full object-cover opacity-30 mix-blend-luminosity transform scale-105" loading="lazy" width="1920" height="1080">
+        </div>
+        <!-- Overlays -->
+        <div class="absolute inset-0 bg-gradient-to-b from-cosmic via-cosmic/80 to-void z-0"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_black_80%)] z-0"></div>
+        <!-- Grid pattern -->
+        <div class="absolute inset-0 opacity-[0.05] z-0" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        
+        <div class="container mx-auto text-center relative z-10 max-w-4xl">
+            <!-- Glitchy status text -->
+            <div class="inline-block mb-6 relative">
+                <div class="absolute inset-0 bg-blood/20 blur-md rounded-full"></div>
+                <div class="relative bg-black/50 border border-blood text-white px-6 py-2 rounded-full text-xs font-display tracking-[0.3em] font-bold shadow-[0_0_15px_rgba(230,0,0,0.5)]">
+                    <span class="w-2 h-2 bg-red-500 rounded-full inline-block mr-2 animate-ping"></span>
+                    <span data-i18n="cta-status">SERVER STATUS: ONLINE • F2P</span>
+                </div>
+            </div>
+            
+            <h2 class="text-5xl md:text-7xl font-display font-black mb-6 leading-[1.1] uppercase tracking-wider">
+                <span class="text-white" data-i18n="cta-title-1">THE NIGHTMARE</span><br>
+                <span class="text-blood text-glow-red" data-i18n="cta-title-2">AWAITS YOU</span>
+            </h2>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed" data-i18n="cta-desc">
+                Your survival starts now. Join 12 Million+ players in the ultimate post-apocalyptic open world.
+            </p>
+            
+            <div class="flex flex-col items-center justify-center">
+                <!-- Massive CTA Button -->
+                <button onclick="window.open('https://to.dordir.com/u?k=24c3cf9a5dde4dd896352d1314e9aacd&via=19905', '_blank')" class="hero-cta-main group relative bg-gradient-to-r from-blood to-red-600 hover:from-red-600 hover:to-orange-500 text-white font-black py-6 px-16 md:py-8 md:px-24 text-xl md:text-3xl rounded-2xl shadow-[0_0_50px_rgba(230,0,0,0.6)] hover:shadow-[0_0_80px_rgba(230,0,0,0.9)] transition-all duration-300 animate-pulse-mega border border-white/20 transform hover:-translate-y-2" aria-label="Download Once Human for PC - Free to play">
+                    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSI+PC9yZWN0Pgo8L3N2Zz4=')] opacity-30 mix-blend-overlay"></div>
+                    <span class="relative z-10 flex items-center gap-4">
+                        <i class="fab fa-windows text-4xl md:text-5xl drop-shadow-lg"></i>
+                        <span class="tracking-widest flex flex-col items-start text-left">
+                            <span class="text-sm md:text-base text-white/80 font-normal tracking-widest uppercase mb-1" data-i18n="cta-play">Play Free Now</span>
+                            <span class="font-display" data-i18n="cta-download">DOWNLOAD FOR PC</span>
+                        </span>
+                    </span>
+                    <div class="absolute inset-0 bg-white/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                </button>
+                
+                <!-- Technical Info -->
+                <div class="mt-8 flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-gray-400 text-xs sm:text-sm font-mono border border-white/10 bg-black/40 backdrop-blur-md px-6 py-3 rounded-lg">
+                    <span class="flex items-center gap-2"><i class="fas fa-hdd text-blood"></i> <span data-i18n="cta-size">~55 GB</span></span>
+                    <span class="hidden sm:inline w-px h-4 bg-white/20"></span>
+                    <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-green-500"></i> <span data-i18n="cta-secure">Secure Client</span></span>
+                    <span class="hidden sm:inline w-px h-4 bg-white/20"></span>
+                    <span class="flex items-center gap-2 text-white/50" data-i18n="cta-nocredit">NO CREDIT CARD REQ</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom atmospheric glow -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blood/10 to-transparent pointer-events-none"></div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer-terminal py-16 px-6 relative overflow-hidden crt-flicker">
+        <div class="absolute inset-0 bg-void/50"></div>
+        <div class="container mx-auto relative z-10">
+            <div class="flex flex-col items-center text-center">
+
+                <div class="mb-6 opacity-60 hover:opacity-100 transition-all duration-500">
+                    <img src="assets/GAME 1.webp" alt="Once Human Logo" class="w-32 md:w-40 h-auto grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" width="160" height="57">
+                    <div class="flex items-center justify-center gap-4 mt-4">
+                        <img src="assets/wordpress-logo-svgrepo-com.svg" alt="WordPress" class="w-5 h-5 opacity-40 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0" loading="lazy" width="20" height="20">
+                        <p class="text-[9px] text-gray-400 font-mono tracking-[0.3em] uppercase" data-i18n="footer-terminal">Survival Terminal v2.0</p>
+                    </div>
+                </div>
+                
+                <!-- Center Copyright & Lore Text -->
+                <div class="max-w-md">
+                    <p class="text-gray-500 text-xs mb-4 leading-relaxed font-mono uppercase tracking-wider" data-i18n="footer-warning">Warning: Stardust contamination levels outside sanctuary walls are critical. Deployment authorized for verified Metas only.</p>
+                    <div class="h-px w-20 bg-blood/30 mx-auto mb-6"></div>
+                    <p class="text-gray-600 text-[10px] font-mono uppercase tracking-widest"><span data-i18n="footer-copy">&copy; 2024 Starry Studio. All rights reserved.</span> <span class="mx-2 text-blood/40">|</span> <span data-i18n="footer-subject">Subject: Once Human Project</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Sticky Bottom Bar (Floating Button Only) -->
+    <div class="sticky-bottom fixed bottom-6 left-0 right-0 z-[60] px-4 md:px-10 flex items-center justify-center pointer-events-none">
+        <div class="flex items-center justify-center w-full pointer-events-auto">
+            <button onclick="window.open('https://to.dordir.com/u?k=24c3cf9a5dde4dd896352d1314e9aacd&via=19905', '_blank')" class="btn-primary w-full max-w-sm bg-blood hover:bg-bloodDark text-white font-black py-4 px-8 rounded-2xl flex items-center justify-center gap-3 btn-sound text-base uppercase tracking-wider pulse-red shadow-[0_0_30px_rgba(230,0,0,0.4)] transition-all duration-300" aria-label="Download the game for free">
+                <i class="fas fa-download text-lg"></i>
+                <span data-i18n="sticky-cta">DOWNLOAD FREE NOW</span>
+                <i class="fab fa-windows text-xl ml-2"></i>
+            </button>
+        </div>
+    </div>
+    
+
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top btn-sound" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Unused libraries (Three.js) removed for performance -->
+    
+    <!-- Video Popup Modal -->
+    <div id="videoModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-cosmic/95 backdrop-blur-xl modal-overlay"></div>
+        <div class="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden border border-blood/30 shadow-[0_0_50px_rgba(230,0,0,0.2)]" id="videoModalContent">
+            <!-- Tactical Overlays -->
+            <div class="absolute inset-0 pointer-events-none z-10">
+                <div class="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-blood/50 m-4"></div>
+                <div class="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-blood/50 m-4"></div>
+                <div class="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-blood/50 m-4"></div>
+                <div class="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-blood/50 m-4"></div>
+                
+                <!-- Animating Scanlines -->
+                <div class="absolute inset-0 opacity-10 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%]"></div>
+            </div>
+
+            <!-- Header Info -->
+            <div class="absolute top-6 left-10 z-20 flex items-center gap-4">
+                <div class="w-2 h-2 rounded-full bg-blood animate-pulse"></div>
+                <span class="text-blood font-mono text-xs tracking-[0.3em] uppercase" data-i18n="modal-tactical">Tactical Feed // Signal: Active</span>
+            </div>
+
+            <!-- Close Button -->
+            <button class="absolute top-6 right-6 z-30 w-10 h-10 bg-blood/10 hover:bg-blood/30 border border-blood/30 flex items-center justify-center rounded-lg transition-all group" id="closeVideoModal" aria-label="Close video modal">
+                <i class="fas fa-times text-blood group-hover:scale-110 transition-transform"></i>
+            </button>
+
+            <!-- Video Container -->
+            <div class="w-full h-full" id="videoPlayerContainer">
+                <iframe id="youtubePlayer" class="w-full h-full hidden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video id="localVideoPlayer" class="w-full h-full hidden" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Popup Modal (Lightbox) -->
+    <div id="imageModal" class="fixed inset-0 z-[110] hidden items-center justify-center p-4 md:p-12">
+        <div class="absolute inset-0 bg-cosmic/90 backdrop-blur-xl modal-overlay"></div>
+        <div class="relative max-w-[85vw] md:max-w-2xl max-h-[70vh] bg-black/95 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_100px_rgba(0,0,0,0.9)] transform scale-95 opacity-0 transition-all duration-500 flex flex-col" id="imageModalContent">
+            <!-- Tactical Overlays -->
+            <div class="absolute inset-0 pointer-events-none z-10">
+                <div class="absolute top-0 left-0 w-16 h-16 border-t border-l border-white/20 m-2"></div>
+                <div class="absolute top-0 right-0 w-16 h-16 border-t border-r border-white/20 m-2"></div>
+                <div class="absolute bottom-0 left-0 w-16 h-16 border-b border-l border-white/20 m-2"></div>
+                <div class="absolute bottom-0 right-0 w-16 h-16 border-b border-r border-white/20 m-2"></div>
+            </div>
+
+            <!-- Header Info -->
+            <div class="absolute top-4 left-6 z-20 flex items-center gap-3 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/5">
+                <div class="w-1.5 h-1.5 rounded-full bg-blood animate-pulse"></div>
+                <span class="text-white font-mono text-[10px] tracking-[0.2em] uppercase opacity-80" id="imageModalTitle" data-i18n="modal-visual">Visual Archive // ID-773</span>
+            </div>
+
+            <!-- Controls -->
+            <div class="absolute top-4 right-4 z-30 flex items-center gap-2">
+                <a href="#" id="downloadImage" download class="w-10 h-10 bg-white/5 hover:bg-blood/20 border border-white/10 flex items-center justify-center rounded-lg transition-all group" aria-label="Download high resolution image">
+                    <i class="fas fa-download text-white/70 group-hover:text-white transition-colors"></i>
+                </a>
+                <button class="w-10 h-10 bg-white/5 hover:bg-blood/20 border border-white/10 flex items-center justify-center rounded-lg transition-all group" id="closeImageModal" aria-label="Close image modal">
+                    <i class="fas fa-times text-white/70 group-hover:text-white group-hover:scale-110 transition-transform"></i>
+                </button>
+            </div>
+
+            <!-- Image Container -->
+            <div class="relative flex-1 flex items-center justify-center overflow-hidden bg-[radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:20px_20px]">
+                <div id="imageLoading" class="absolute inset-0 flex items-center justify-center z-20">
+                    <div class="w-12 h-12 border-2 border-blood/20 border-t-blood rounded-full animate-spin"></div>
+                </div>
+                <img id="modalImage" src="" class="max-w-full max-h-full object-contain relative z-0 transition-opacity duration-300 opacity-0" alt="Fullscreen View">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+</body>
+</html>
